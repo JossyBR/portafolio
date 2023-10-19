@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <div className="flex flex-row justify-between">
+    <div className="flex flex-row justify-between mt-11">
       <div>LOGO</div>
       <div className=" flex flex-row gap-10">
         <Link to="/inicio">Inicio</Link>

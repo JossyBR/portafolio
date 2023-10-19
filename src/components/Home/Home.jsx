@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../Nav/Nav";
 import Inicio from "../Inicio/Inicio";
+import Acerca from "../Acerca/Acerca";
 
 const Home = () => {
   return (
@@ -10,6 +11,9 @@ const Home = () => {
       </div>
       <div>
         <Inicio />
+      </div>
+      <div>
+        <Acerca />
       </div>
       {/* <div>Inicio</div>
       <div>Acerca de mi</div>
