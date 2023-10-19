@@ -1,11 +1,15 @@
 import React from "react";
 import Nav from "../Nav/Nav";
+import Inicio from "../Inicio/Inicio";
 
 const Home = () => {
   return (
     <div>
       <div>
         <Nav />
+      </div>
+      <div>
+        <Inicio />
       </div>
       {/* <div>Inicio</div>
       <div>Acerca de mi</div>
