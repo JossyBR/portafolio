@@ -9,7 +9,7 @@ import {
 } from "@material-tailwind/react";
 import Prueba from "../../assets/Foto2.jpg";
 
-// Definir una lista de proyectos
+// Crear el proyecto.js
 const proyectos = [
   {
     title: "Proyecto 1",
@@ -40,7 +40,7 @@ const proyectos = [
 
 const Proyectos = () => {
   return (
-    <div className="">
+    <div id="#proyectos" className="">
       <h2 className="text-6xl font-bold mb-16">Mis Proyectos</h2>
       <div className="flex flex-wrap justify-center gap-14">
         {proyectos.map((proyecto, index) => (
@@ -64,7 +64,7 @@ const Proyectos = () => {
             </CardBody>
             <CardFooter className="pt-0 flex flex-row justify-center">
               <Button className="bg-transparent border-2 border-[#FF9143] text-[#FF9143] font-semibold">
-                Read More
+                Conoce Más
               </Button>
             </CardFooter>
           </Card>

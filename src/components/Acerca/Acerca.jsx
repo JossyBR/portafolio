@@ -4,7 +4,7 @@ import prueba from "../../assets/Foto2.jpg";
 
 const Acerca = () => {
   return (
-    <div className="mt-[180px] mb-11 flex justify-center ">
+    <div id="#acerca" className="mt-[180px] mb-11 flex justify-center ">
       <div className="flex flex-row w-[967px] bg-[#1C1E22] text-white gap-8 rounded-lg ">
         <div className="ml-6 mt-6 mb-6 w-[326px] h-[410px] rounded-lg">
           <img
