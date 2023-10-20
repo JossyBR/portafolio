@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "../Nav/Nav";
 import Inicio from "../Inicio/Inicio";
 import Acerca from "../Acerca/Acerca";
+import Proyectos from "../Proyectos/Proyectos";
 
 const Home = () => {
   return (
@@ -14,6 +15,9 @@ const Home = () => {
       </div>
       <div>
         <Acerca />
+      </div>
+      <div>
+        <Proyectos />
       </div>
       {/* <div>Inicio</div>
       <div>Acerca de mi</div>
