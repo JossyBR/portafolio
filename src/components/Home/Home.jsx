@@ -4,6 +4,7 @@ import Inicio from "../Inicio/Inicio";
 import Acerca from "../Acerca/Acerca";
 import Proyectos from "../Proyectos/Proyectos";
 import Habilidades from "../Habilidades/Habilidades";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -23,11 +24,9 @@ const Home = () => {
       <div>
         <Habilidades />
       </div>
-      {/* <div>Inicio</div>
-      <div>Acerca de mi</div>
-      <div>Proyectos</div>
-      <div>Habilidades</div>
-      <div>Footer</div> */}
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };
