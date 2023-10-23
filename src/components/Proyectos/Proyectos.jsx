@@ -8,42 +8,14 @@ import {
   Button,
 } from "@material-tailwind/react";
 import Prueba from "../../assets/Foto2.jpg";
-
-// Crear el proyecto.js
-const proyectos = [
-  {
-    title: "Proyecto 1",
-    description:
-      "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you can enjoy the main night life in Barcelona",
-    image: Prueba,
-  },
-  {
-    title: "Proyecto 2",
-    description:
-      "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you can enjoy the main night life in Barcelona",
-    image: Prueba,
-  },
-  {
-    title: "Proyecto 3",
-    description:
-      "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you can enjoy the main night life in Barcelona",
-    image: Prueba,
-  },
-  {
-    title: "Proyecto 4",
-    description:
-      "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you can enjoy the main night life in Barcelona",
-    image: Prueba,
-  },
-  // Agrega más proyectos según sea necesario
-];
+import allProyectos from "./allProyectos";
 
 const Proyectos = () => {
   return (
     <div id="#proyectos" className="">
       <h2 className="text-6xl font-bold mb-16">Mis Proyectos</h2>
       <div className="flex flex-wrap justify-center gap-14">
-        {proyectos.map((proyecto, index) => (
+        {allProyectos.map((proyecto, index) => (
           <Card
             key={index}
             className="w-[560px] h-[768px] bg-transparent border-none mb-16"
