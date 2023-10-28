@@ -1,4 +1,4 @@
-// Crear el proyecto.js
+// Crear archivo de proyectos.js
 import Prueba from "../../assets/Foto2.jpg";
 
 const allProyectos = [
