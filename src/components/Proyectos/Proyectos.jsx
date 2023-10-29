@@ -28,7 +28,7 @@ const Proyectos = () => {
               <img
                 src={proyecto.image}
                 alt="card-image"
-                className="w-[560px] h-[620px]"
+                className="w-[560px] h-[620px] bg-orange-500 hover:bg-orange-600"
               />
             </CardHeader>
 
