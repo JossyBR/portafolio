@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Input, Button, Textarea } from "@material-tailwind/react";
 
+import { Formulario } from "../Formulario/Formulario";
+
 const Footer = () => {
   return (
     <div className="bg-black flex flex-col items-center h-auto mt-20">
@@ -10,6 +12,9 @@ const Footer = () => {
           <h4 className="text-[#FF9143] font-bold text-[32px]">
             Trabajemos Juntos
           </h4>
+          <div className="mt-10 flex flex-col">
+            <Formulario />
+          </div>
           <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
             <div className="mb-1 flex flex-col gap-6">
               <p variant="h6" color="blue-gray" className="-mb-3">
