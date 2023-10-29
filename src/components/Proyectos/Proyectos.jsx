@@ -11,6 +11,10 @@ import Prueba from "../../assets/Foto2.jpg";
 import allProyectos from "./allProyectos";
 
 const Proyectos = () => {
+  const redirigir = (link) => {
+    window.open(link, "_blank"); // Abre el enlace en una nueva pestaña
+  };
+
   return (
     <div id="#proyectos" className="">
       <h2 className="text-6xl font-bold mb-16">Mis Proyectos</h2>
@@ -20,7 +24,7 @@ const Proyectos = () => {
             key={index}
             className="w-[560px] h-[768px] bg-transparent border-none mb-16"
           >
-            <CardHeader className="w-[560px] h-[620px] ml-0 mt-0">
+            <CardHeader className="w-[560px] h-[620px] ml-0 mt-0 ">
               <img
                 src={proyecto.image}
                 alt="card-image"
@@ -30,12 +34,15 @@ const Proyectos = () => {
 
             <CardBody className="text-white">
               <h4 color="blue-gray" className="mb-2 font-bold">
-                {proyecto.title}
+                {proyecto.titulo}
               </h4>
-              <p>{proyecto.description}</p>
+              <p>{proyecto.descripcion}</p>
             </CardBody>
             <CardFooter className="pt-0 flex flex-row justify-center">
-              <Button className="bg-transparent border-2 border-[#FF9143] text-[#FF9143] font-semibold">
+              <Button
+                onClick={() => redirigir(proyecto.link)}
+                className="bg-transparent border-2 border-[#FF9143] text-[#FF9143] font-semibold"
+              >
                 Conoce Más
               </Button>
             </CardFooter>
