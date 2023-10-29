@@ -63,13 +63,16 @@ const Footer = () => {
         <div className="flex flex-col leading-loose">
           <h4 className="text-2xl text-[#FF9143] font-bold">Social</h4>
           <div className="flex flex-row gap-6">
-            <a href="https://www.linkedin.com/in/joselin-benitez-rivas-ab2575189">
+            <a
+              href="https://www.linkedin.com/in/joselin-benitez-rivas-ab2575189"
+              target="_blank"
+            >
               <i class="fa-brands fa-linkedin text-2xl"></i>{" "}
             </a>
-            <a href="https://github.com/JossyBR">
+            <a href="https://github.com/JossyBR" target="_blank">
               <i class="fa-brands fa-github text-2xl"></i>
             </a>
-            <a href="https://www.instagram.com/jossybnitez/">
+            <a href="https://www.instagram.com/jossybnitez/" target="_blank">
               <i class="fa-brands fa-instagram text-2xl"></i>
             </a>
           </div>
