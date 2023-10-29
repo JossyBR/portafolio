@@ -33,7 +33,7 @@ const Habilidades = () => {
   return (
     <div>
       <h2 className="text-6xl font-bold mb-5">Habilidades</h2>
-      <div className="border flex flex-wrap justify-center  p-11 gap-44">
+      <div className="flex flex-wrap justify-center  p-11 gap-44">
         {habilidades.map((habilidad, index) => (
           <div
             key={index}

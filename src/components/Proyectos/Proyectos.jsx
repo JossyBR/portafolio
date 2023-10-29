@@ -22,18 +22,18 @@ const Proyectos = () => {
         {allProyectos.map((proyecto, index) => (
           <Card
             key={index}
-            className="w-[560px] h-[768px] bg-transparent border-none mb-16"
+            className="w-[560px] h-[768px] bg-transparent border-none mb-16 transition hover:transition-all hover:scale-105"
           >
             <CardHeader className="w-[560px] h-[620px] ml-0 mt-0 ">
               <img
                 src={proyecto.image}
                 alt="card-image"
-                className="w-[560px] h-[620px] bg-orange-500 hover:bg-orange-600"
+                className="w-[560px] h-[620px]"
               />
             </CardHeader>
 
             <CardBody className="text-white">
-              <h4 color="blue-gray" className="mb-2 font-bold">
+              <h4 color="blue-gray" className="mb-2 font-bold text-2xl">
                 {proyecto.titulo}
               </h4>
               <p>{proyecto.descripcion}</p>
@@ -41,7 +41,7 @@ const Proyectos = () => {
             <CardFooter className="pt-0 flex flex-row justify-center">
               <Button
                 onClick={() => redirigir(proyecto.link)}
-                className="bg-transparent border-2 border-[#FF9143] text-[#FF9143] font-semibold"
+                className="bg-transparent border-2 border-[#FF9143] text-[#FF9143] font-semibold hover:scale-105"
               >
                 Conoce Más
               </Button>

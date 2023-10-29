@@ -9,21 +9,21 @@ const Nav = () => {
     <div className="flex flex-row justify-between mt-11">
       <div>LOGO</div>
       <div className=" flex flex-row gap-10">
-        <Link to="#inicio" className={border}>
+        <a href="#inicio" className={border}>
           Inicio
-        </Link>
-        <Link to="#acerca" className={border}>
+        </a>
+        <a href="#acerca" className={border}>
           Acerca de Mi
-        </Link>
-        <Link to="#proyectos" className={border}>
+        </a>
+        <a href="#proyectos" className={border}>
           Proyectos
-        </Link>
-        <Link to="#habilidades" className={border}>
+        </a>
+        <a href="#habilidades" className={border}>
           Habilidades
-        </Link>
-        <Link to="#contactame" className={border}>
+        </a>
+        <a href="#contactame" className={border}>
           Contactame
-        </Link>
+        </a>
       </div>
     </div>
   );
