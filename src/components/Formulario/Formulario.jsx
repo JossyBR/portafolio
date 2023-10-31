@@ -72,7 +72,7 @@ export const Formulario = () => {
             type="submit"
             value="Send"
             className="mt-6 bg-transparent border-2
-            border-[#FF9143] text-[#FF9143] font-semibold"
+            border-[#FF9143] text-[#FF9143] font-semibold hover:scale-105"
             Enviar
           >
             Enviar

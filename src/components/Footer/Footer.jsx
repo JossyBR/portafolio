@@ -5,6 +5,8 @@ import { Input, Button, Textarea } from "@material-tailwind/react";
 import { Formulario } from "../Formulario/Formulario";
 
 const Footer = () => {
+  const border = "hover:border-b-2 border-[#FF9143]";
+
   return (
     <div className="bg-black flex flex-col items-center h-auto mt-20">
       <div className="flex flex-row justify-center items-center gap-28 mt-12">
@@ -15,8 +17,12 @@ const Footer = () => {
         <div className="flex flex-col leading-loose ">
           <h4 className="text-2xl text-[#FF9143] font-bold ">Inicio</h4>
 
-          <Link>Acerca de Mi</Link>
-          <Link>Proyectos</Link>
+          <a href="#acerca" className={border}>
+            Acerca de Mi
+          </a>
+          <a href="#proyectos" className={border}>
+            Proyectos
+          </a>
         </div>
         <div className="flex flex-col leading-loose">
           <h4 className="text-2xl text-[#FF9143] font-bold">Social</h4>
