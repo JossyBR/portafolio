@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Input, Button, Textarea } from "@material-tailwind/react";
 
 export const Formulario = () => {
   const form = useRef();
@@ -25,14 +26,59 @@ export const Formulario = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="flex flex-col bg-transparent">
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <div>
+      <h4 className="text-[#FF9143] font-bold text-[32px]">
+        Trabajemos Juntos
+      </h4>
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96"
+      >
+        <div className="mb-1 flex flex-col gap-6">
+          <label variant="h6" color="blue-gray" className="-mb-3">
+            Nombre
+          </label>
+          <Input
+            type="text"
+            name="user_name"
+            size="lg"
+            placeholder="Nombre"
+            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+            labelProps={{
+              className: "before:content-none after:content-none",
+            }}
+          />
+          <label variant="h6" color="blue-gray" className="-mb-3">
+            Correo
+          </label>
+          <Input
+            type="email"
+            name="user_email"
+            size="lg"
+            placeholder="Correo"
+            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+            labelProps={{
+              className: "before:content-none after:content-none",
+            }}
+          />
+          <label variant="h6" color="blue-gray" className="-mb-3">
+            Mensaje
+          </label>
+          <Textarea name="message" placeholder="Mensaje..." />
+        </div>
+        <div className="flex justify-center">
+          <Button
+            type="submit"
+            value="Send"
+            className="mt-6 bg-transparent border-2
+            border-[#FF9143] text-[#FF9143] font-semibold"
+            Enviar
+          >
+            Enviar
+          </Button>
+        </div>
+      </form>
+    </div>
   );
 };
