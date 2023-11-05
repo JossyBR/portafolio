@@ -22,13 +22,13 @@ const Proyectos = () => {
         {allProyectos.map((proyecto, index) => (
           <Card
             key={index}
-            className="w-[560px] h-[768px] bg-transparent border-none mb-16 transition hover:transition-all hover:scale-105"
+            className="w-[500px] h-[400px] bg-transparent border-none mb-16 transition hover:transition-all hover:scale-105"
           >
-            <CardHeader className="w-[560px] h-[620px] ml-0 mt-0 ">
+            <CardHeader className="w-[500px] h-[250px] ml-0 mt-0 ">
               <img
                 src={proyecto.image}
                 alt="card-image"
-                className="w-[560px] h-[620px]"
+                className="w-[500px] h-[250px]"
               />
             </CardHeader>
 

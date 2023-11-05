@@ -17,18 +17,18 @@ const Inicio = () => {
   };
 
   return (
-    <div className="mt-[100px] ">
+    <div>
       <div>
         <h1 className="text-4xl">
           Hola <br />{" "}
-          <span className="text-[#FF9143] text-7xl leading-loose font-bold">
-            Soy Jossy Benitez
+          <span className="text-7xl leading-loose font-bold">
+            Soy <span className="text-[#FF9143]">Jossy Benitez</span>
           </span>
           <br /> y soy FullStack Web Developer{" "}
         </h1>
       </div>
 
-      <div className="ml-40 mt-5">
+      <div className="ml-40 mt-10">
         <Button
           onClick={abrirPdf}
           className="w-52 bg-[#FF9143] border border-[#FF9143] text-white font-semibold hover:bg-orange-400 hover:scale-105"

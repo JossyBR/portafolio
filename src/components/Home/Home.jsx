@@ -9,22 +9,25 @@ import Footer from "../Footer/Footer";
 const Home = () => {
   return (
     <div>
-      <div>
-        <Nav />
+      <div className="h-[1024px]">
+        <div>
+          <Nav />
+        </div>
+        <div id="inicio" className="my-48">
+          <Inicio />
+        </div>
       </div>
-      <div id="inicio">
-        <Inicio />
-      </div>
-      <div id="acerca">
+
+      <div id="acerca" className="border border-red-800 h-[1024px]">
         <Acerca />
       </div>
-      <div id="proyectos">
+      <div id="proyectos" className="h-[1024px]">
         <Proyectos />
       </div>
-      <div id="habilidades">
+      <div id="habilidades" className="h-[1024px]">
         <Habilidades />
       </div>
-      <div id="contactame">
+      <div id="contactame" className="h-[1024px]">
         <Footer />
       </div>
     </div>

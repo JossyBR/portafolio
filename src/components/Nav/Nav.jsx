@@ -7,7 +7,9 @@ const Nav = () => {
 
   return (
     <div className="flex flex-row justify-between mt-11">
-      <div>LOGO</div>
+      <div>
+        <h1 className="text-2xl">JB</h1>
+      </div>
       <div className=" flex flex-row gap-10">
         <a href="#inicio" className={border}>
           Inicio
