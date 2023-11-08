@@ -21,7 +21,7 @@ const Home = () => {
       <div id="acerca" className="border border-red-800 h-[1024px]">
         <Acerca />
       </div>
-      <div id="proyectos" className="h-[1024px]">
+      <div id="proyectos" className="h-[2048px]">
         <Proyectos />
       </div>
       <div id="habilidades" className="h-[1024px]">
