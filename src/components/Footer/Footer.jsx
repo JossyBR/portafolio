@@ -8,7 +8,8 @@ const Footer = () => {
   const border = "hover:border-b-2 border-[#FF9143]";
 
   return (
-    <div className="bg-black flex flex-col items-center h-auto mt-20">
+    <div className="bg-black flex flex-col items-center h-[1024px] mt-20">
+      <h2 className="text-6xl font-bold mb-16">Contacto</h2>
       <div className="flex flex-row justify-center items-center gap-28 mt-12">
         <div className="mt-10 flex flex-col">
           <Formulario />

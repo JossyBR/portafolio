@@ -1,8 +1,13 @@
 import React from "react";
 import { Card, Button } from "@material-tailwind/react";
 import prueba from "../../assets/Foto2.jpg";
+import CV from "../../../public/CV_Joselin Benitez.pdf";
 
 const Acerca = () => {
+  //Visualizar en otra ventana
+  const abrirPdf = () => {
+    window.open(CV, "_blank");
+  };
   return (
     <div id="#acerca" className="mt-[180px] mb-11 flex justify-center ">
       <div className="flex flex-row w-[967px] h-[700px] bg-[#1C1E22] text-white gap-8 rounded-lg ">
@@ -25,7 +30,15 @@ const Acerca = () => {
             trabajo, con experiencia en diseño e implementación del sistema de
             gestión de seguridad y salud en el trabajo SG-SST.
           </p>
-          texto
+
+          <div className="ml-40 mt-10">
+            <Button
+              onClick={abrirPdf}
+              className="w-52 bg-[#FF9143] border border-[#FF9143] text-white font-semibold hover:scale-105"
+            >
+              <p className="text-base">Ver CV</p>
+            </Button>
+          </div>
         </div>
       </div>
     </div>

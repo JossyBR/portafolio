@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <div>
       <div className="h-[1024px]">
-        <div>
-          <Nav />
+        <div className="sticky">
+          <Nav className="sticky" />
         </div>
         <div id="inicio" className="my-48">
           <Inicio />

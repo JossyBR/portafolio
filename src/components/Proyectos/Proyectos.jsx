@@ -35,7 +35,7 @@ const Proyectos = () => {
 
   return (
     <div id="#proyectos" className="">
-      <h2 className="text-6xl font-bold mb-16">Mis Proyecto</h2>
+      <h2 className="text-6xl font-bold mb-16">Proyecto</h2>
       <div className=" border flex flex-wrap justify-center gap-14">
         {allProyectos.map((proyecto, index) => (
           <Card
