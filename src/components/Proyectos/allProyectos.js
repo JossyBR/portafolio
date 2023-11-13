@@ -9,7 +9,7 @@ const allProyectos = [
   {
     titulo: "Huellitas de amor",
     descripcion:
-      "Es una aplicación que tiene como objetivo facilitar el proceso de adopción de mascotas, conectando de manera segura y efectiva a personas que desean adoptar con animales en busca de un hogar amoroso",
+      "Es una aplicación que tiene como objetivo facilitar el proceso de adopción de mascotas, conectando de manera segura y efectiva a personas que desean adoptar con animales en busca de un hogar amoroso.",
     iconos: [react, node],
     image: huellitas,
 
@@ -18,7 +18,7 @@ const allProyectos = [
   {
     titulo: "Rick and Morty",
     descripcion:
-      "Proyecto realizado durante el Bootcamp Henry y es el resultado de aplicar tecnologías modernas como React, Redux, Node.js y express para la base de datos. Su enfoque es simple pero divertido: permitir a los fans de Rick and Morty explorar una base de datos de personajes de la serie.",
+      "La aplicación permite buscar personajes de la serie, marcar a los personajes como favoritos y aprovechar funciones de ordenamiento ascendente y descendente ⬆️⬇️, así como filtrar personajes por género.",
     image: rickmorty,
     iconos: [react, node],
     link: "https://github.com/JossyBR/rick-and-Morty",

@@ -35,27 +35,28 @@ const Proyectos = () => {
 
   return (
     <div id="#proyectos" className="">
-      <h2 className="text-6xl font-bold mb-16">Proyecto</h2>
-      <div className=" border flex flex-wrap justify-center gap-14">
+      <div className="h-16"></div>
+      <h2 className="text-6xl font-bold mt-[25px] mb-7">Proyecto</h2>
+      <div className="flex flex-wrap justify-center gap-14">
         {allProyectos.map((proyecto, index) => (
           <Card
             key={index}
-            className="border border-black w-[560px] h-[768px] bg-transparent border-none mb-16 transition hover:transition-all hover:scale-105"
+            className="shadow-none w-[500px] h-[700px] bg-transparent mb-16 transition hover:transition-all"
           >
-            <CardHeader className="w-[560px] h-[620px] ml-0 mt-0 ">
+            <CardHeader className="w-[500px] h-[450px] ml-0 mt-0 bg-transparent">
               <img
                 src={proyecto.image}
                 alt="card-image"
-                className="w-[560px] h-[620px]"
+                className="w-[500px] h-[450px]"
               />
             </CardHeader>
 
             <div className="flex flex-row">
-              <CardBody className="text-white border">
+              <CardBody className="text-white h-52 p-0 mt-8">
                 <h4 color="blue-gray" className="mb-2 font-bold text-2xl">
                   {proyecto.titulo}
                 </h4>
-                <p>{proyecto.descripcion}</p>
+                <p className="text-justify">{proyecto.descripcion}</p>
               </CardBody>
               <div className="flex flex-col justify-center items-center gap-10 w-[200px]">
                 {/* <div className="flex flex-row">

@@ -10,7 +10,7 @@ import Home from "./components/Home/Home";
 function App() {
   return (
     <>
-      <div className="border border-black mx-[115px] ">
+      <div className="border border-black w-[1180px] mx-[130px] ">
         <Routes>
           <Route path={PathRoutes.HOME} element={<Home />} />
         </Routes>
