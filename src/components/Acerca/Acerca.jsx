@@ -9,7 +9,10 @@ const Acerca = () => {
     window.open(CV, "_blank");
   };
   return (
-    <div id="#acerca" className="  flex justify-center ">
+    <div
+      id="#acerca"
+      className="flex justify-center items-center border border-orange-800  min-h-screen "
+    >
       <div className="flex flex-row w-[967px] h-[700px] bg-[#1C1E22] text-white gap-8 rounded-lg ">
         <div className="ml-6 mt-32 mb-6 w-[326px] h-[410px] rounded-lg">
           <img

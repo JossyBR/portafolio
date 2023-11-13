@@ -34,14 +34,14 @@ const Proyectos = () => {
   };
 
   return (
-    <div id="#proyectos" className="">
+    <div className="border border-orange-500 min-h-screen">
       <div className="h-16"></div>
       <h2 className="text-6xl font-bold mt-[25px] mb-7">Proyecto</h2>
-      <div className="flex flex-wrap justify-center gap-14">
+      <div className="flex flex-wrap justify-center gap-14 ">
         {allProyectos.map((proyecto, index) => (
           <Card
             key={index}
-            className="shadow-none w-[500px] h-[700px] bg-transparent mb-16 transition hover:transition-all"
+            className="shadow-none w-[500px] h-[700px] bg-transparent transition hover:transition-all"
           >
             <CardHeader className="w-[500px] h-[450px] ml-0 mt-0 bg-transparent">
               <img

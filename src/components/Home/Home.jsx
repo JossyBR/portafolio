@@ -10,23 +10,30 @@ const Home = () => {
   return (
     <div>
       <Nav />
-      <div
+      <div id="inicio">
+        <Inicio />
+      </div>
+
+      {/* <div
         id="inicio"
         className="border border-black h-[1024px] flex flex-row items-center"
       >
         <Inicio />
-      </div>
+      </div> */}
 
-      <div id="acerca" className="h-[1024px] flex flex-row items-center justify-center">
+      <div
+        id="acerca"
+        className="h-[1024px]"
+      >
         <Acerca />
       </div>
-      <div id="proyectos" className="border h-[2048px]">
+      <div id="proyectos">
         <Proyectos />
       </div>
-      <div id="habilidades" className="h-[1024px]">
+      <div id="habilidades">
         <Habilidades />
       </div>
-      <div id="contactame" className="h-[1024px]">
+      <div id="contactame">
         <Footer />
       </div>
     </div>
