@@ -11,7 +11,7 @@ const Inicio = () => {
   // };
 
   return (
-    <div className="border border-black  min-h-screen flex flex-row items-center">
+    <div className="min-h-screen flex flex-row items-center">
       <div>
         <h1 className="text-4xl">
           Hola <br />{" "}

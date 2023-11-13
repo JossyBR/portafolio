@@ -7,7 +7,7 @@ const Nav = () => {
   const border = "hover:border-b-2 border-[#FF9143]";
 
   return (
-    <div className="border fixed top-0 flex flex-row justify-between items-center w-[1180px] mt-5 z-10 h-16">
+    <div className="fixed top-0 flex flex-row justify-between items-center w-[1180px] mt-5 z-10 h-16 p-2">
       <div>
         <h1 className="text-2xl">JB</h1>
       </div>

@@ -5,10 +5,10 @@ import allHabilidades from "./allHabilidades";
 
 const Habilidades = () => {
   return (
-    <div className="min-h-screen border border-orange-800 flex flex-col justify-center ">
+    <div className="min-h-screen">
       <div className="h-16"></div>
-      <h2 className="text-6xl font-bold ">Habilidades</h2>
-      <div className="border flex flex-row flex-wrap justify-center gap-44">
+      <h2 className="text-5xl font-bold mt-14">Habilidades</h2>
+      <div className="flex flex-row flex-wrap justify-center gap-44 mt-20">
         {allHabilidades.map((habilidad, index) => (
           <div
             key={index}

@@ -34,10 +34,10 @@ const Proyectos = () => {
   };
 
   return (
-    <div className="border border-orange-500 min-h-screen">
+    <div className="min-h-screen snap-y snap-mandatory ">
       <div className="h-16"></div>
-      <h2 className="text-6xl font-bold mt-[25px] mb-7">Proyecto</h2>
-      <div className="flex flex-wrap justify-center gap-14 ">
+      <h2 className="text-5xl font-bold mt-[25px] mb-7">Proyectos</h2>
+      <div className="flex flex-wrap justify-center gap-14 snap-center">
         {allProyectos.map((proyecto, index) => (
           <Card
             key={index}
