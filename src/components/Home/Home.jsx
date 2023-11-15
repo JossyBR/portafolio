@@ -21,10 +21,7 @@ const Home = () => {
         <Inicio />
       </div> */}
 
-      <div
-        id="acerca"
-        className="h-[1024px]"
-      >
+      <div id="acerca" className="h-[1024px] ">
         <Acerca />
       </div>
       <div id="proyectos">
