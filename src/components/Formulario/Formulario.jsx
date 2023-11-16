@@ -88,37 +88,40 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Input, Button, Textarea } from "@material-tailwind/react";
-import validaciones from "./validaciones";
+import validationSchema from "./validaciones";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+// import * as Yup from "yup";
 
 export const Formulario = () => {
-  const form = useRef();
-  const [nombre, setNombre] = useState("");
-  const [correo, setCorreo] = useState("");
-  const [mensaje, setMensaje] = useState("");
+  // const form = useRef();
+  // const [nombre, setNombre] = useState("");
+  // const [correo, setCorreo] = useState("");
+  // const [mensaje, setMensaje] = useState("");
 
-  const { validarNombre, validarCorreo } = validaciones();
+  // const { validarNombre, validarCorreo } = validaciones();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if (!validarNombre(nombre)) {
-      // Realiza alguna acción si el nombre no es válido
-      console.log("Nombre no válido");
-      return;
-    }
+    // if (!validarNombre(nombre)) {
+    //   // Realiza alguna acción si el nombre no es válido
+    //   console.log("Nombre no válido");
+    //   return;
+    // }
 
-    if (!validarCorreo(correo)) {
-      // Realiza alguna acción si el correo no es válido
-      console.log("Correo no válido");
-      return;
-    }
+    // if (!validarCorreo(correo)) {
+    //   // Realiza alguna acción si el correo no es válido
+    //   console.log("Correo no válido");
+    //   return;
+    // }
 
     // Resto del código para enviar el correo
     emailjs
       .sendForm(
         "service_08wafrv",
         "template_9y4fetl",
-        form.current,
+        // form.current,
+        "form",
         "Tq34g58qqHkrvE_OZ"
       )
       .then(
@@ -136,7 +139,7 @@ export const Formulario = () => {
       <h4 className="text-[#FF9143] font-bold text-[32px]">
         Trabajemos Juntos
       </h4>
-      <form
+      {/* <form
         ref={form}
         onSubmit={sendEmail}
         className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96"
@@ -199,7 +202,32 @@ export const Formulario = () => {
             Enviar
           </Button>
         </div>
-      </form>
+      </form> */}
+
+      <Formik
+        initialValues={{
+          nombre: "",
+          correo: "",
+          mensaje: "",
+        }}
+        onSubmit={sendEmail}
+        validationSchema={validationSchema}
+      >
+        {({ isSubmitting, errors }) => (
+          <Form>
+            <Field name="nombre" type="text" error={errors.nombre} />
+            <Field name="correo" type="email" error={errors.correo} />
+            <Field name="mensaje" type="text" error={errors.mensaje} />
+            {/* <ErrorMessage name="nombre" />
+            <ErrorMessage name="correo" />
+            <ErrorMessage name="mensaje" /> */}
+
+            <Button type="submit" value="Send" onClick={sendEmail}>
+              Enviar
+            </Button>
+          </Form>
+        )}
+      </Formik>
     </div>
   );
 };
