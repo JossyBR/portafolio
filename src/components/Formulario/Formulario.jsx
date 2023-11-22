@@ -1,10 +1,28 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Input, Button, Textarea } from "@material-tailwind/react";
 import validaciones from "./validaciones";
 
 export const Formulario = () => {
   const form = useRef();
+  const [formData, setFormData] = useState({
+    nombre: "",
+    correo: "",
+    mensaje: "",
+  });
+  const [errors, setErrors] = useState({});
+
+  // const initialData = {
+  //   nombre: "",
+  //   correo: "",
+  //   mensaje: "",
+  // };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+
+    setErrors(validaciones({ ...formData, [e.target.name]: e.target.value }));
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -45,11 +63,19 @@ export const Formulario = () => {
             name="user_name"
             size="lg"
             placeholder="Nombre"
+            value={formData.nombre}
+            onChange={handleChange}
             className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
             labelProps={{
               className: "before:content-none after:content-none",
             }}
           />
+          {errors.e1 ? (
+            <p>{errors.e1}</p>
+          ) : errors.e2 ? (
+            <p>{errors.e2}</p>
+          ) : null}
+          ,
           <label variant="h6" color="blue-gray" className="-mb-3">
             Correo
           </label>
@@ -58,16 +84,22 @@ export const Formulario = () => {
             name="user_email"
             size="lg"
             placeholder="Correo"
+            value={formData.correo}
+            onChange={handleChange}
             className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
             labelProps={{
               className: "before:content-none after:content-none",
             }}
           />
-
           <label variant="h6" color="blue-gray" className="-mb-3">
             Mensaje
           </label>
-          <Textarea name="message" placeholder="Mensaje..." />
+          <Textarea
+            name="message"
+            placeholder="Mensaje..."
+            value={formData.mensaje}
+            onChange={handleChange}
+          />
         </div>
         <div className="flex justify-center">
           <Button
