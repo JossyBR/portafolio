@@ -19,34 +19,39 @@
 // export default validationSchema;
 
 const validaciones = (data) => {
+  let errors = {};
 
-      let errors = {};
-  
-      let name = /^[a-zA-Z\s]+$/ // Acepta solo letras y espacios
-      let correo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/ // Valida un formato básico de correo electrónico
- 
+  // let name = /^[a-zA-Z\s]+$/ // Acepta solo letras y espacios
+  // let correo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/ // Valida un formato básico de correo electrónico
 
-      if(!name.test(data.nombre)){
-        errors.e1 = 'Ingresa un nombre valido'
-        document.querySelector('#name').classList.add('error');
-      }
+  let nameRegex = /^[a-zA-Z\s]+$/;
+  let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  let msjRegex = /^[a-zA-Z\s]+$/;
 
-      if(!data.nombre){
-        errors.e2 = 'Ingresa un nombre'
-      }
+  if (!data.user_name.trim()) {
+    errors.user_name = 'El campo "Nombre" no debe ser vacío';
+  } else if (!nameRegex.test(data.user_name)) {
+    errors.user_name = "Ingresa un nombre válido";
+  }
 
-    // const validarNombre = (nombre) => {
-    //   return patrones.nombre.test(nombre);
-    // };
+  if (!data.user_email.trim()) {
+    errors.user_email = 'El campo "Correo" no debe ser vacío';
+  } else if (!emailRegex.test(data.user_email)) {
+    errors.user_email = "Ingresa un correo válido";
+  }
 
-    // const validarCorreo = (correo) => {
-    //   return patrones.correo.test(correo);
-    // };
+  if (!data.message.trim()) {
+    errors.message = "Escribe un mensaje";
+  } else if (!msjRegex.test(data.message)) {
+    errors.message = "Ingresa un mensaje válido";
+  }
 
-    return {
-      validarNombre,
-      validarCorreo,
-    };
-  };
+  return errors;
 
-  export default validaciones;
+  // return {
+  //   validarNombre,
+  //   validarCorreo,
+  // };
+};
+
+export default validaciones;
