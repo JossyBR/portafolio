@@ -110,6 +110,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Input, Button, Textarea } from "@material-tailwind/react";
 import validarCampos from "./validaciones";
+import Swal from "sweetalert2";
 
 export const Formulario = () => {
   const form = useRef();
@@ -150,9 +151,21 @@ export const Formulario = () => {
         .then(
           (result) => {
             console.log(result.text);
+            // Mostrar SweetAlert de éxito
+            Swal.fire({
+              icon: "success",
+              title: "Correo enviado con éxito",
+              text: "¡Gracias por tu mensaje!",
+            });
           },
           (error) => {
             console.log(error.text);
+            // Mostrar SweetAlert de error
+            Swal.fire({
+              icon: "error",
+              title: "Error al enviar el correo",
+              text: "Por favor, inténtalo de nuevo.",
+            });
           }
         );
     }
@@ -200,7 +213,7 @@ export const Formulario = () => {
             value={formData.correo}
             onChange={handleChange}
             className={`!border-t-blue-gray-200 focus:!border-t-gray-900 ${
-              errors.correo ? "error" : ""
+              errors.user_email ? "error" : ""
             }`}
           />
           {/* {errors.correo && <p className="text-red-500">{errors.correo}</p>} */}

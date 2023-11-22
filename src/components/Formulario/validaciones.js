@@ -24,18 +24,18 @@ const validaciones = (data) => {
   // let name = /^[a-zA-Z\s]+$/ // Acepta solo letras y espacios
   // let correo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/ // Valida un formato básico de correo electrónico
 
-  let nameRegex = /^[a-zA-Z\s]+$/;
-  let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  let msjRegex = /^[a-zA-Z\s]+$/;
+  let nameRegex = /^[a-zA-Z]{3,}$/;
+  let emailRegex = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+  let msjRegex = /^(?=.*[a-zA-Z].*[a-zA-Z].*[a-zA-Z])[a-zA-Z0-9\s\W]{3,}$/;
 
   if (!data.user_name.trim()) {
-    errors.user_name = 'El campo "Nombre" no debe ser vacío';
+    errors.user_name = 'El campo "Nombre" no debe estar vacío';
   } else if (!nameRegex.test(data.user_name)) {
-    errors.user_name = "Ingresa un nombre válido";
+    errors.user_name = "El nombre debe tener al menos tres letras";
   }
 
   if (!data.user_email.trim()) {
-    errors.user_email = 'El campo "Correo" no debe ser vacío';
+    errors.user_email = 'El campo "Correo" no debe estar vacío';
   } else if (!emailRegex.test(data.user_email)) {
     errors.user_email = "Ingresa un correo válido";
   }
@@ -43,7 +43,7 @@ const validaciones = (data) => {
   if (!data.message.trim()) {
     errors.message = "Escribe un mensaje";
   } else if (!msjRegex.test(data.message)) {
-    errors.message = "Ingresa un mensaje válido";
+    errors.message = "El mensaje debe contener al menos tres letras.";
   }
 
   return errors;
