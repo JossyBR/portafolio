@@ -157,6 +157,12 @@ export const Formulario = () => {
               title: "Correo enviado con éxito",
               text: "¡Gracias por tu mensaje!",
             });
+            // Restablecer el estado del formulario - no me funciona para limpiar el formulario
+            setFormData({
+              user_name: "",
+              user_email: "",
+              message: "",
+            });
           },
           (error) => {
             console.log(error.text);
