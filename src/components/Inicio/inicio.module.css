@@ -23,10 +23,9 @@
 /* Nueva clase para ocultar la imagen */
 .hideImage {
   visibility: hidden;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 /* .image {
   animation: yourAnimation 3s linear 0s infinite normal none;
 } */
-

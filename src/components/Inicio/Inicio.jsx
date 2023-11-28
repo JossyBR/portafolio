@@ -59,6 +59,7 @@ import styles from "./inicio.module.css";
 import { css, html, javascript, react, node, redux, figma } from "../../assets";
 
 const Inicio = () => {
+  const tamano = "w-20 h-20 top-0 absolute";
   // Estado para almacenar el número de la imagen actual
   const [currentImage, setCurrentImage] = useState(1);
 
@@ -81,8 +82,8 @@ const Inicio = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-row items-center justify-around border">
-      <div className="border border-black">
+    <div className="min-h-screen flex flex-row items-center justify-around">
+      <div>
         <h1 className="text-4xl animate__animated animate__slideInLeft">
           Hola <br />{" "}
           <span className="text-7xl leading-loose font-bold">
@@ -91,10 +92,10 @@ const Inicio = () => {
           <br /> y soy FullStack Web Developer{" "}
         </h1>
       </div>
-      <div className={`${styles.targetParentElement} border relative`}>
+      <div className={`${styles.targetParentElement} relative`}>
         <img
           src={css}
-          className={`${styles.yourAnimation} w-11 h-11 top-0 absolute ${
+          className={`${styles.yourAnimation} ${tamano} ${
             // Si currentImage es 1, no se aplica la clase hideImage, de lo contrario, se aplica
             currentImage === 1 ? "" : styles.hideImage
           }`}
@@ -102,42 +103,42 @@ const Inicio = () => {
         />
         <img
           src={html}
-          className={`${styles.yourAnimation} w-11 h-11 top-0 absolute ${
+          className={`${styles.yourAnimation} ${tamano} ${
             currentImage === 2 ? "" : styles.hideImage
           }`}
           alt="Imagen 2"
         />
         <img
           src={javascript}
-          className={`${styles.yourAnimation} w-11 h-11 top-0 absolute ${
+          className={`${styles.yourAnimation} ${tamano} ${
             currentImage === 3 ? "" : styles.hideImage
           }`}
           alt="Imagen 3"
         />
         <img
           src={react}
-          className={`${styles.yourAnimation} w-11 h-11 top-0 absolute ${
+          className={`${styles.yourAnimation} ${tamano} ${
             currentImage === 4 ? "" : styles.hideImage
           }`}
           alt="Imagen 4"
         />
         <img
           src={node}
-          className={`${styles.yourAnimation} w-11 h-11 top-0 absolute ${
+          className={`${styles.yourAnimation} ${tamano} ${
             currentImage === 5 ? "" : styles.hideImage
           }`}
           alt="Imagen 5"
         />
         <img
           src={redux}
-          className={`${styles.yourAnimation} w-11 h-11 top-0 absolute ${
+          className={`${styles.yourAnimation} ${tamano} ${
             currentImage === 6 ? "" : styles.hideImage
           }`}
           alt="Imagen 6"
         />
         <img
           src={figma}
-          className={`${styles.yourAnimation} w-11 h-11 top-0 ${
+          className={`${styles.yourAnimation} w-20 h-20 top-0 ${
             currentImage === 7 ? "" : styles.hideImage
           }`}
           alt="Imagen 7"
