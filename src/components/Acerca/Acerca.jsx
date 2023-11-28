@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Button } from "@material-tailwind/react";
 import prueba from "../../assets/Foto2.jpg";
 import CV from "../../../public/CV_Joselin Benitez.pdf";
+import styles from "./acerca.module.css";
 
 const Acerca = () => {
   //Visualizar en otra ventana
@@ -34,14 +35,16 @@ const Acerca = () => {
             gestión de seguridad y salud en el trabajo SG-SST.
           </p>
 
-          <div className="ml-40 mt-10">
+          {/* <div className="ml-40 mt-10">
             <Button
               onClick={abrirPdf}
               className="w-52 bg-[#FF9143] border border-[#FF9143] text-white font-semibold hover:scale-105"
             >
               <p className="text-base">Ver CV</p>
             </Button>
-          </div>
+          </div> */}
+
+          <Button className={`${styles.button} ${styles.svg} ${styles.sparkle}`}> PRUEBA </Button>
         </div>
       </div>
     </div>

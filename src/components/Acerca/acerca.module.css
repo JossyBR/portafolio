@@ -1,0 +1,22 @@
+button:active {
+    scale: 1;
+}
+
+svg{
+    overflow: visible !important;
+}
+
+.sparkle path {
+    color: hsl(0 0% calc((var(--active, 0)* 70%)));
+    transform-box: fill-box;
+    transform-origin: center;
+    fill: currentColor;
+    stroke: currentColor;
+    animation-delay: calc((var(--transition)* 1.5));
+    animation-duration: 0.6s;
+    transition: color var(--transition);
+}
+
+button:is(:hover, :focus-visible) path {
+    animation-name: bounce;
+}
