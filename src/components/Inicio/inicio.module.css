@@ -1,0 +1,32 @@
+@keyframes yourAnimation {
+  0% {
+    transform: rotate3d(1, 1, 1, 0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+    opacity: 1;
+  }
+}
+
+.yourAnimation {
+  animation: yourAnimation 3s linear 0s infinite normal none;
+  perspective: 500px;
+  backface-visibility: visible;
+}
+
+.targetParentElement {
+  perspective: 500px;
+  perspective-origin: center;
+}
+
+/* Nueva clase para ocultar la imagen */
+.hideImage {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* .image {
+  animation: yourAnimation 3s linear 0s infinite normal none;
+} */
+
