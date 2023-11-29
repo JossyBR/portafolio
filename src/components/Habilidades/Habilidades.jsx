@@ -13,26 +13,29 @@ const Habilidades = () => {
     <div className="min-h-screen">
       <div className="h-16"></div>
       <h2 className="text-5xl font-bold mt-14">Habilidades</h2>
-      <div className={`flex flex-wrap justify-center gap-8 mt-20 border }`}>
-        {allHabilidades.map((habilidad, index) => (
-          
-          <div
-            key={index}
-            className={`${styles["animate-loop-scroll"]}flex flex-col items-center font-bold mb-8 w-1/5 border border-black`}
-          >
-            <img src={habilidad.imagen} alt="" className="w-44 h-44" />
-            <h4 className="text-2xl">{habilidad.texto}</h4>
-          </div>
-        ))}
-        {otrasHabilidades.map((habilidad, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center font-bold mb-8 border"
-          >
-            <img src={habilidad.imagen} alt="" className="w-44 h-44" />
-            <h4 className="text-2xl">{habilidad.texto}</h4>
-          </div>
-        ))}
+      <div className={`flex flex-col gap-32 mt-20`}>
+        <div className={`flex flex-row justify-around`}>
+          {allHabilidades.map((habilidad, index) => (
+            <div
+              key={index}
+              className={`flex flex-col items-center font-bold mb-8 transition duration-300 delay-150 hover:scale-110 hover:shadow-2xl`}
+            >
+              <img src={habilidad.imagen} alt="" className="w-44 h-44" />
+              <h4 className="text-2xl">{habilidad.texto}</h4>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-row justify-around ">
+          {otrasHabilidades.map((habilidad, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center font-bold mb-8 transition duration-300 delay-150 hover:scale-110 hover:shadow-2xl"
+            >
+              <img src={habilidad.imagen} alt="" className="w-44 h-44" />
+              <h4 className="text-2xl">{habilidad.texto}</h4>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
