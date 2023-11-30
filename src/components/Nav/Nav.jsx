@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@material-tailwind/react";
+import { vector } from "../../assets";
 
 const Nav = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -7,8 +8,11 @@ const Nav = () => {
 
   return (
     <div className="fixed top-0 flex flex-row justify-between items-center w-[1180px] mt-5 z-10 h-16 p-2">
-      <div>
-        <h5 className={`text-2xl`}>JB</h5>
+      <div className="w-[100px] h-16 flex justify-center relative">
+        <h5 className={`text-4xl text-center z-10 my-auto`}>JB</h5>
+        <div className="absolute top-0 w-[100px] z-0 left-0 bottom-0">
+          <img src={vector} alt="" />
+        </div>
       </div>
       <div className=" flex flex-row gap-10">
         <a href="#inicio" className={border}>

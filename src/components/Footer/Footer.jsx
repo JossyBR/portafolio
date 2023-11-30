@@ -17,7 +17,7 @@ const Footer = () => {
             <Formulario />
           </div>
           <div>
-            <h5 className="text-2xl">JB</h5>
+            <h5 className="text-6xl">JB</h5>
           </div>
           <div className="flex flex-col leading-loose ">
             <h4 className="text-2xl text-[#FF9143] font-bold ">Inicio</h4>

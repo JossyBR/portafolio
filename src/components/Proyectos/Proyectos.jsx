@@ -9,8 +9,7 @@ import {
 } from "@material-tailwind/react";
 import Prueba from "../../assets/Foto2.jpg";
 import allProyectos from "./allProyectos";
-// import { BiLogoReact } from "react-icons/bi";
-// import { DiCss3 } from "react-icons/di";
+import { vector } from "../../assets";
 
 const Proyectos = () => {
   const redirigir = (link) => {
@@ -34,14 +33,17 @@ const Proyectos = () => {
   };
 
   return (
-    <div className="min-h-screen snap-y snap-mandatory ">
+    <div className="min-h-screen snap-y snap-mandatory relative">
       <div className="h-16 "></div>
+      <div className="absolute left-0 top-0 w-[550px] z-0">
+        <img src={vector} alt="" />
+      </div>
       <h2 className="text-5xl font-bold mt-[25px] mb-7">Proyectos</h2>
       <div className="flex flex-wrap justify-center gap-14 ">
         {allProyectos.map((proyecto, index) => (
           <Card
             key={index}
-            className="shadow-none w-[500px] h-[700px] bg-transparent transition duration-300 delay-150 hover:scale-95 hover:shadow-2xl"
+            className="shadow-none w-[500px] h-[700px] bg-transparent transition duration-300 delay-150 hover:scale-95 hover:shadow-2xl z-10"
           >
             <CardHeader className="w-[500px] h-[450px] ml-0 mt-0 bg-transparent">
               <img
@@ -51,8 +53,8 @@ const Proyectos = () => {
               />
             </CardHeader>
 
-            <div className="flex flex-row">
-              <CardBody className="text-white h-52 p-0 mt-8">
+            <div className="flex flex-row ">
+              <CardBody className="text-white h-52 p-0 mt-6 ml-2">
                 <h4 color="blue-gray" className="mb-2 font-bold text-2xl">
                   {proyecto.titulo}
                 </h4>
@@ -88,6 +90,12 @@ const Proyectos = () => {
             </div>
           </Card>
         ))}
+        <div className="absolute bottom-[850px] w-[450px] z-0">
+          <img src={vector} alt="" />
+        </div>
+        <div className="absolute bottom-[450px] w-[450px] z-0">
+          <img src={vector} alt="" />
+        </div>
       </div>
     </div>
   );

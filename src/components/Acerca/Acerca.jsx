@@ -49,11 +49,11 @@ const Acerca = () => {
           <div className="ml-40 mt-10">
             <Button
               onClick={abrirPdf}
-              className="w-52 bg-[#FF9143] border border-[#FF9143] text-white font-semibold transition duration-300 delay-150 opacity-70 hover:scale-105 hover:opacity-100"
+              className="w-44 border-2 border-[#FF9143] text-white font-semibold transition duration-300 delay-150 opacity-70 hover:scale-105 hover:opacity-100"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <p className="text-base">
+              <p className="text-base font-bold text-[#FF9143]">
                 Ver CV{" "}
                 {isHovered ? (
                   <i className="far fa-face-laugh-beam ml-2"></i>
@@ -76,8 +76,6 @@ const Acerca = () => {
               
             </Button>
           </div> */}
-
-          {/* <Button className={`${styles.button} ${styles.svg} ${styles.sparkle}`}> PRUEBA </Button> */}
         </div>
       </div>
     </div>

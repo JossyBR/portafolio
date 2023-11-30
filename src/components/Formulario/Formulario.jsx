@@ -79,8 +79,8 @@ export const Formulario = () => {
         onSubmit={sendEmail}
         className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96"
       >
-        <div className="mb-1 flex flex-col gap-6">
-          <label variant="h6" color="blue-gray" className="-mb-3">
+        <div className="mb-1 flex flex-col">
+          <label variant="h6" color="blue-gray" className="mb-1">
             Nombre
           </label>
           <Input
@@ -90,17 +90,15 @@ export const Formulario = () => {
             placeholder="Nombre"
             value={formData.nombre}
             onChange={handleChange}
-            className={`!border-t-blue-gray-200 focus:!border-t-gray-900 ${
-              errors.nombre ? "error" : ""
-            }`}
+            className="mb-0"
           />
           {/* {errors.nombre && <p className="text-red-500">{errors.nombre}</p>} */}
 
           {errors.user_name && errors.user_name.length > 0 && (
-            <p className="text-red-500">{errors.user_name}</p>
+            <p className="text-red-500 mt-1 mb-1">{errors.user_name}</p>
           )}
 
-          <label variant="h6" color="blue-gray" className="-mb-3">
+          <label variant="h6" color="blue-gray" className="mt-4 mb-1 ">
             Correo
           </label>
           <Input
@@ -110,17 +108,12 @@ export const Formulario = () => {
             placeholder="Correo"
             value={formData.correo}
             onChange={handleChange}
-            className={`!border-t-blue-gray-200 focus:!border-t-gray-900 ${
-              errors.user_email ? "error" : ""
-            }`}
           />
-          {/* {errors.correo && <p className="text-red-500">{errors.correo}</p>} */}
-
           {errors.user_email && errors.user_email.length > 0 && (
-            <p className="text-red-500">{errors.user_email}</p>
+            <p className="text-red-500 mt-1 mb-1">{errors.user_email}</p>
           )}
 
-          <label variant="h6" color="blue-gray" className="-mb-3">
+          <label variant="h6" color="blue-gray" className="mt-4 mb-1">
             Mensaje
           </label>
           <Textarea
