@@ -93,14 +93,18 @@ const Inicio = () => {
   return (
     <div className="min-h-screen flex flex-row items-center justify-around">
       <div>
-        {/* <div>{vector}</div> */}
-        <h1 className="text-4xl animate__animated animate__slideInLeft">
-          Hola <br />{" "}
-          <span className="text-7xl leading-loose font-bold">
-            Soy <span className="text-[#FF9143] ">Jossy Benitez</span>
-          </span>
-          <br /> y soy FullStack Web Developer{" "}
-        </h1>
+        <div className="absolute left-72 bottom-48 w-[700px]">
+          <img src={vector} alt="Imagen" className="bottom-7 " />
+        </div>
+        <div className="relative">
+          <h1 className="text-4xl animate__animated animate__slideInLeft">
+            Hola <br />{" "}
+            <span className="text-7xl leading-loose font-bold">
+              Soy <span className="text-[#FF9143] ">Jossy Benitez</span>
+            </span>
+            <br /> y soy FullStack Web Developer{" "}
+          </h1>
+        </div>
       </div>
       <div className={`${styles.targetParentElement} relative`}>
         <img

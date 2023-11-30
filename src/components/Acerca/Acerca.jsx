@@ -3,6 +3,7 @@ import { Card, Button } from "@material-tailwind/react";
 import prueba from "../../assets/Foto2.jpg";
 import CV from "../../../public/CV_Joselin Benitez.pdf";
 import styles from "./acerca.module.css";
+import { vector } from "../../assets";
 
 const Acerca = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -19,9 +20,12 @@ const Acerca = () => {
   return (
     <div
       id="#acerca"
-      className="flex justify-center items-center  min-h-screen "
+      className="flex justify-center items-center  min-h-screen relative"
     >
-      <div className="flex flex-row w-[967px] h-[700px] bg-[#1C1E22] text-white gap-8 rounded-lg ">
+      <div className="absolute left-0 top-0 w-[700px] h-[700px] z-0">
+        <img src={vector} alt="" />
+      </div>
+      <div className="flex flex-row w-[967px] h-[700px] bg-[#1C1E22] text-white gap-8 rounded-lg z-10">
         <div className="ml-6 mt-32 mb-6 w-[326px] h-[410px] rounded-lg  ">
           <img
             src={prueba}
