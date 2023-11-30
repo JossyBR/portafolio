@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [openNav, setOpenNav] = useState(false);
-  const border = "hover:border-b-2 border-[#FF9143]";
+  const border = "border-b-2 border-transparent hover:border-[#FF9143]";
 
   return (
     <div className="fixed top-0 flex flex-row justify-between items-center w-[1180px] mt-5 z-10 h-16 p-2">
       <div>
-        <h1 className="text-2xl">JB</h1>
+        <h5 className={`text-2xl`}>JB</h5>
       </div>
       <div className=" flex flex-row gap-10">
         <a href="#inicio" className={border}>

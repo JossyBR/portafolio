@@ -12,6 +12,7 @@ import node from "./habilidades/node.svg";
 import redux from "./habilidades/redux.svg";
 import figma from "./habilidades/figma.svg";
 import javascript from "./habilidades/javascript.svg";
+import vector from "./vector.svg";
 
 export {
   huellitas,
@@ -25,4 +26,5 @@ export {
   redux,
   figma,
   javascript,
+  vector,
 };

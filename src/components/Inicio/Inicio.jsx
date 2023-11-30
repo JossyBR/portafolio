@@ -56,10 +56,19 @@ import React, { useState, useEffect } from "react";
 import { Button, Image } from "@material-tailwind/react";
 import Prueba from "../../assets/habilidades/figma.svg";
 import styles from "./inicio.module.css";
-import { css, html, javascript, react, node, redux, figma } from "../../assets";
+import {
+  css,
+  html,
+  javascript,
+  react,
+  node,
+  redux,
+  figma,
+  vector,
+} from "../../assets";
 
 const Inicio = () => {
-  const tamano = "w-20 h-20 top-0 absolute";
+  const tamano = "w-40 h-40 top-0 absolute transition duration-300";
   // Estado para almacenar el número de la imagen actual
   const [currentImage, setCurrentImage] = useState(1);
 
@@ -84,6 +93,7 @@ const Inicio = () => {
   return (
     <div className="min-h-screen flex flex-row items-center justify-around">
       <div>
+        {/* <div>{vector}</div> */}
         <h1 className="text-4xl animate__animated animate__slideInLeft">
           Hola <br />{" "}
           <span className="text-7xl leading-loose font-bold">

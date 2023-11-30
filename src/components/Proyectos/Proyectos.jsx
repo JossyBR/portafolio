@@ -41,13 +41,13 @@ const Proyectos = () => {
         {allProyectos.map((proyecto, index) => (
           <Card
             key={index}
-            className="shadow-none w-[500px] h-[700px] bg-transparent transition hover:transition-all"
+            className="shadow-none w-[500px] h-[700px] bg-transparent transition duration-300 delay-150 hover:scale-95 hover:shadow-2xl"
           >
             <CardHeader className="w-[500px] h-[450px] ml-0 mt-0 bg-transparent">
               <img
                 src={proyecto.image}
                 alt="card-image"
-                className="w-[500px] h-[450px]"
+                className="w-[500px] h-[450px] opacity-75 hover:opacity-100"
               />
             </CardHeader>
 

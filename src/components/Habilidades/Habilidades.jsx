@@ -18,7 +18,7 @@ const Habilidades = () => {
           {allHabilidades.map((habilidad, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center font-bold mb-8 transition duration-300 delay-150 hover:scale-110 hover:shadow-2xl`}
+              className={`flex flex-col items-center font-bold mb-8 rounded-3xl transition duration-300 delay-150 hover:scale-110 hover:shadow-2xl`}
             >
               <img src={habilidad.imagen} alt="" className="w-44 h-44" />
               <h4 className="text-2xl">{habilidad.texto}</h4>
@@ -29,7 +29,7 @@ const Habilidades = () => {
           {otrasHabilidades.map((habilidad, index) => (
             <div
               key={index}
-              className="flex flex-col items-center font-bold mb-8 transition duration-300 delay-150 hover:scale-110 hover:shadow-2xl"
+              className="flex flex-col items-center font-bold mb-8 rounded-3xl transition duration-300 delay-150 hover:scale-110 hover:shadow-2xl"
             >
               <img src={habilidad.imagen} alt="" className="w-44 h-44" />
               <h4 className="text-2xl">{habilidad.texto}</h4>
