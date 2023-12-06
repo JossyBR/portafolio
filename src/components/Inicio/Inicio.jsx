@@ -93,7 +93,7 @@ const Inicio = () => {
   return (
     <div className="min-h-screen flex flex-row items-center justify-around">
       <div>
-        <div className="absolute left-72 bottom-48 w-[700px]">
+        <div className="absolute rigth-96 bottom-48 w-[700px]">
           <img src={vector} alt="Imagen" className="bottom-7 " />
         </div>
         <div className="relative">
