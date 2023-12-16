@@ -33,7 +33,16 @@
 
 // export default allHabilidades;
 
-import { css, html, javascript, react, node, redux, figma } from "../../assets";
+import {
+  css,
+  html,
+  javascript,
+  react,
+  node,
+  redux,
+  php,
+  figma,
+} from "../../assets";
 
 export const allHabilidades = [
   {
@@ -62,6 +71,10 @@ export const otrasHabilidades = [
   {
     imagen: redux,
     texto: "Redux",
+  },
+  {
+    imagen: php,
+    texto: "PHP",
   },
   {
     imagen: figma,

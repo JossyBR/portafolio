@@ -68,7 +68,7 @@ import {
 } from "../../assets";
 
 const Inicio = () => {
-  const tamano = "w-40 h-40 top-0 absolute transition duration-300";
+  const tamano = "w-44 h-44 top-0 absolute transition duration-300";
   // Estado para almacenar el número de la imagen actual
   const [currentImage, setCurrentImage] = useState(1);
 
@@ -106,7 +106,7 @@ const Inicio = () => {
           </h1>
         </div>
       </div>
-      <div className={`${styles.targetParentElement} relative`}>
+      <div className={`${styles.targetParentElement} relative w-44 h-44`}>
         <img
           src={css}
           className={`${styles.yourAnimation} ${tamano} ${
@@ -152,7 +152,7 @@ const Inicio = () => {
         />
         <img
           src={figma}
-          className={`${styles.yourAnimation} w-20 h-20 top-0 ${
+          className={`${styles.yourAnimation} w-44 h-44  top-0 ${
             currentImage === 7 ? "" : styles.hideImage
           }`}
           alt="Imagen 7"

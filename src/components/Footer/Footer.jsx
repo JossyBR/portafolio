@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center border-t-2 w-[1074px] mb-0 mt-32">
-          <h4 className="mt-4 font-bold text-2xl">2023. Jossy Benitez</h4>
+          <h4 className="mt-4 font-bold text-2xl">&#169; 2023 Jossy Benitez</h4>
         </div>
       </div>
     </div>
