@@ -10,7 +10,7 @@ import Home from "./components/Home/Home";
 function App() {
   return (
     <>
-      <div className="w-[1180px] mx-[130px] ">
+      <div>
         <Routes>
           <Route path={PathRoutes.HOME} element={<Home />} />
         </Routes>

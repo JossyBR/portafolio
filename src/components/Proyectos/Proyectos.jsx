@@ -33,23 +33,23 @@ const Proyectos = () => {
   };
 
   return (
-    <div className="min-h-screen snap-y snap-mandatory relative">
+    <div className="min-h-screen relative">
       <div className="h-16 "></div>
       <div className="absolute left-0 top-0 w-[550px] z-0">
         <img src={vector} alt="" />
       </div>
-      <h2 className="text-5xl font-bold mt-[25px] mb-7">Proyectos</h2>
-      <div className="flex flex-wrap justify-center gap-14 ">
+      <h2 className="text-5xl font-bold mt-[25px]  ml-2">Proyectos</h2>
+      <div className="flex flex-wrap justify-center items-center p-2 h-[700px] gap-4">
         {allProyectos.map((proyecto, index) => (
           <Card
             key={index}
-            className="shadow-none w-[500px] h-[700px] bg-transparent transition duration-300 delay-150 hover:scale-95 hover:shadow-2xl z-10"
+            className="shadow-none w-[450px] h-[600px] bg-transparent transition duration-300 delay-150 hover:scale-95 hover:shadow-xl z-10"
           >
-            <CardHeader className="w-[500px] h-[450px] ml-0 mt-0 bg-transparent">
+            <CardHeader className="w-[450px] h-[350px] ml-0 mt-0 bg-transparent">
               <img
                 src={proyecto.image}
                 alt="card-image"
-                className="w-[500px] h-[450px] opacity-75 hover:opacity-100"
+                className="w-[450px] h-[350px] opacity-75 hover:opacity-100"
               />
             </CardHeader>
 

@@ -20,7 +20,7 @@ const Acerca = () => {
   return (
     <div
       id="#acerca"
-      className="flex justify-center items-center  min-h-screen relative"
+      className="flex justify-center items-center min-h-screen relative"
     >
       <div className="absolute left-0 top-0 w-[700px] h-[700px] z-0">
         <img src={vector} alt="" />

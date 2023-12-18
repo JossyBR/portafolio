@@ -8,7 +8,7 @@ const Footer = () => {
   const border = "border-b-2 border-transparent hover:border-[#FF9143]";
 
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-black min-h-screen ">
       <div className="h-16"></div>
       <h2 className="text-5xl font-bold mt-[25px] mb-7 ml-2">Contacto</h2>
       <div className="flex flex-col items-center">

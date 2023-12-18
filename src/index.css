@@ -6,8 +6,8 @@
   background-color: #262a2c;
   /* border: 1px solid red; */
   color: #ffffff;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 p {
@@ -24,6 +24,15 @@ h4 {
 h5 {
   font-family: "Lobster", sans-serif;
 }
+
+body {
+  margin: 0;
+  /* display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh; */
+}
+
 /* @layer utilities {
   .paused {
     animation-play-state: paused;

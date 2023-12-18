@@ -67,8 +67,11 @@ import {
   vector,
 } from "../../assets";
 
+// w-[1180px] mx-[130px]
+
 const Inicio = () => {
-  const tamano = "w-44 h-44 top-0 absolute transition duration-300";
+  const tamano =
+    "w-20 h-20 absolute transition duration-300 md:w-40 md:h-40 lg:w-44 lg:h-44";
   // Estado para almacenar el número de la imagen actual
   const [currentImage, setCurrentImage] = useState(1);
 
@@ -91,22 +94,24 @@ const Inicio = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-row items-center justify-around">
+    <div className="min-h-screen flex flex-col lg:flex lg:flex-row items-center justify-center lg:justify-around gap-8 w-80 mx-5 sm:w-[550px] sm:mx-10 lg:w-[1180px] lg:mx-[350px]">
       <div>
-        <div className="absolute rigth-96 bottom-48 w-[700px]">
+        <div className="absolute w-60 rigth-24 bottom-80 lg:rigth-96 lg:bottom-48 lg:w-[700px]">
           <img src={vector} alt="Imagen" className="bottom-7 " />
         </div>
         <div className="relative">
-          <h1 className="text-4xl animate__animated animate__slideInLeft">
+          <h1 className="text-lg sm:text-2xl lg:text-4xl  animate__animated animate__slideInLeft">
             Hola <br />{" "}
-            <span className="text-7xl leading-loose font-bold">
+            <span className="text-2xl sm:text-4xl lg:text-7xl  lg:leading-loose font-bold">
               Soy <span className="text-[#FF9143] ">Jossy Benitez</span>
             </span>
             <br /> y soy FullStack Web Developer{" "}
           </h1>
         </div>
       </div>
-      <div className={`${styles.targetParentElement} relative w-44 h-44`}>
+      <div
+        className={`${styles.targetParentElement} relative w-20 h-20 md:w-40 md:h-40 lg:w-44 lg:h-44`}
+      >
         <img
           src={css}
           className={`${styles.yourAnimation} ${tamano} ${
@@ -152,7 +157,9 @@ const Inicio = () => {
         />
         <img
           src={figma}
-          className={`${styles.yourAnimation} w-44 h-44  top-0 ${
+          className={`${
+            styles.yourAnimation
+          } w-20 h-20 md:w-40 md:h-40  lg:w-44 lg:h-44 top-0 ${
             currentImage === 7 ? "" : styles.hideImage
           }`}
           alt="Imagen 7"

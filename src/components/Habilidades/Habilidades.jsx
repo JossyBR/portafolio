@@ -10,7 +10,7 @@ const Habilidades = () => {
   // const repeatOtrasHabilidades = [...otrasHabilidades, ...otrasHabilidades];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-[1180px] mx-[350px]">
       <div className="h-16"></div>
       <h2 className="text-5xl font-bold mt-14">Habilidades</h2>
       <div className={`flex flex-col gap-32 mt-20`}>
