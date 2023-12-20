@@ -10,9 +10,11 @@ const Footer = () => {
   return (
     <div className="bg-black min-h-screen ">
       <div className="h-16"></div>
-      <h2 className="text-5xl font-bold mt-[25px] mb-7 ml-2">Contacto</h2>
+      <h2 className="text-3xl lg:text-5xl font-bold mt-[25px] lg:mb-7 ml-2">
+        Contacto
+      </h2>
       <div className="flex flex-col items-center">
-        <div className="flex flex-row justify-center items-center gap-28 mb-8">
+        <div className="gap-14 flex flex-col lg:flex lg:flex-row justify-center items-center lg:gap-28 lg:mb-8">
           <div className="mt-10 flex flex-col">
             <Formulario />
           </div>
@@ -48,8 +50,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-center border-t-2 w-[1074px] mb-0 mt-32">
-          <h4 className="mt-4 font-bold text-2xl">&#169; 2023 Jossy Benitez</h4>
+        <div className="mt-10 flex justify-center border-t-2 lg:w-[1074px] lg:mb-0 lg:mt-32">
+          <h4 className="mt-1 mb-1 lg:mt-4 font-bold text-2xl">
+            &#169; 2023 Jossy Benitez
+          </h4>
         </div>
       </div>
     </div>

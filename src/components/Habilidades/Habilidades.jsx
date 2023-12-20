@@ -10,18 +10,24 @@ const Habilidades = () => {
   // const repeatOtrasHabilidades = [...otrasHabilidades, ...otrasHabilidades];
 
   return (
-    <div className="min-h-screen w-[1180px] mx-[350px]">
+    <div className="border min-h-screen lg:w-[1180px] lg:mx-[350px]">
       <div className="h-16"></div>
-      <h2 className="text-5xl font-bold mt-14">Habilidades</h2>
-      <div className={`flex flex-col gap-32 mt-20`}>
+      <h2 className="text-3xl ml-2 lg:text-5xl font-bold lg:mt-14">
+        Habilidades
+      </h2>
+      <div className={`gap-5 mt-10 flex flex-col lg:gap-32 lg:mt-20`}>
         <div className={`flex flex-row justify-around`}>
           {allHabilidades.map((habilidad, index) => (
             <div
               key={index}
               className={`flex flex-col items-center font-bold mb-8 rounded-3xl transition duration-300 delay-150 hover:scale-110 hover:shadow-2xl`}
             >
-              <img src={habilidad.imagen} alt="" className="w-44 h-44" />
-              <h4 className="text-2xl">{habilidad.texto}</h4>
+              <img
+                src={habilidad.imagen}
+                alt=""
+                className="w-20 h-20 lg:w-44 lg:h-44"
+              />
+              <h4 className="text-base lg:text-2xl">{habilidad.texto}</h4>
             </div>
           ))}
         </div>
@@ -31,8 +37,12 @@ const Habilidades = () => {
               key={index}
               className="flex flex-col items-center font-bold mb-8 rounded-3xl transition duration-300 delay-150 hover:scale-110 hover:shadow-2xl"
             >
-              <img src={habilidad.imagen} alt="" className="w-44 h-44" />
-              <h4 className="text-2xl">{habilidad.texto}</h4>
+              <img
+                src={habilidad.imagen}
+                alt=""
+                className="w-20 h-20 lg:w-44 lg:h-44"
+              />
+              <h4 className="text-base lg:text-2xl">{habilidad.texto}</h4>
             </div>
           ))}
         </div>

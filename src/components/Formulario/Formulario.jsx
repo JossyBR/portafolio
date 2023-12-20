@@ -70,14 +70,14 @@ export const Formulario = () => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <h4 className="text-[#FF9143] font-bold text-[32px]">
         Trabajemos Juntos
       </h4>
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96"
+        className="w-64 flex flex-col lg:mt-8 mb-2 lg:w-80 max-w-screen-lg"
       >
         <div className="mb-1 flex flex-col">
           <label variant="h6" color="blue-gray" className="mb-1">
