@@ -33,15 +33,15 @@ const Proyectos = () => {
   };
 
   return (
-    <div className="min-h-screen relative border">
+    <div className="min-h-screen relative">
       <div className="h-16 "></div>
       <div className="absolute left-0 top-0 w-[550px] z-0">
         <img src={vector} alt="" />
       </div>
-      <h2 className="text-3xl lg:text-5xl font-bold lg:mt-[25px] ml-2">
+      <h2 className="text-3xl ml-2 font-bold md:mt-5 lg:mt-[25px] lg:text-5xl">
         Proyectos
       </h2>
-      <div className="flex flex-wrap justify-center items-center p-2 gap-6 lg:h-[700px] lg:gap-4">
+      <div className="mt-10 flex flex-wrap justify-center items-center p-2 gap-6 lg:h-[700px] lg:gap-4">
         {allProyectos.map((proyecto, index) => (
           <Card
             key={index}

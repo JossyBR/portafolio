@@ -20,24 +20,24 @@ const Acerca = () => {
   return (
     <div
       id="#acerca"
-      className="flex justify-center items-center min-h-screen relative border"
+      className="flex justify-center items-center min-h-screen relative"
     >
       <div className="absolute left-0 top-0 w-[700px] h-[700px] z-0">
         <img src={vector} alt="" />
       </div>
-      <div className="w-80 h-[600px] flex flex-col items-center lg:flex lg:flex-row lg:w-[967px] lg:h-[700px] bg-[#1C1E22] text-white gap-8 rounded-lg z-10">
-        <div className="w-52 h-52 mt-8 lg:ml-6 lg:mb-6 lg:mt-32 lg:w-[326px] lg:h-[410px] rounded-lg">
+      <div className="w-80 h-[600px] flex flex-col items-center justify-center bg-[#1C1E22] text-white gap-8 rounded-lg z-10 sm:w-[550px] lg:flex lg:flex-row lg:w-[967px] lg:h-[700px]">
+        <div className="w-52 h-52 mt-8 rounded-lg sm:w-64 sm:h-64 lg:ml-6 lg:w-[326px] lg:h-[410px] ">
           <img
             src={prueba}
             alt="Acerca de"
-            className="w-52 h-52 lg:w-[326px] lg:h-[405px] rounded-lg "
+            className="w-52 h-52 rounded-lg sm:w-64 sm:h-64 lg:w-[326px] lg:h-[405px]"
           />
         </div>
-        <div className="w-72 h-72 mx-1 lg:w-[560px] lg:mt-32 lg:mr-6">
-          <h3 className="text-2xl mb-5 lg:text-5xl lg:mb-[32px]">
+        <div className="w-auto h-72 mx-1 flex flex-col justify-center lg:w-[560px] lg:h-auto lg:mr-6">
+          <h3 className="text-2xl mb-5 mx-1 lg:text-5xl lg:mb-[32px]">
             Acerca de Mi
           </h3>
-          <p className="text-xs text-justify lg:text-base lg:leading-10 ">
+          <p className="text-xs text-justify mx-1 sm:text-sm lg:text-base lg:leading-10 ">
             Hola! mi nombre es Jossy Benitez y soy Full Stack Developer con
             sólida formación en tecnologías como HTML, CSS, JavaScript, React,
             Redux, Express y Node.js. Mi interés principal radica en aprender y
@@ -48,10 +48,10 @@ const Acerca = () => {
             gestión de seguridad y salud en el trabajo SG-SST.
           </p>
 
-          <div className="w-auto mt-10 flex flex-row justify-center items-center lg:ml-40 lg:mt-10">
+          <div className="w-auto mt-5 flex flex-row justify-center items-center lg:mt-10">
             <Button
               onClick={abrirPdf}
-              className="w-36 h-10 flex items-center justify-center lg:w-44 border-2 border-[#FF9143] text-white font-semibold transition duration-300 delay-150 opacity-70 hover:scale-105 hover:opacity-100"
+              className="w-36 h-10 flex items-center justify-center lg:w-44 lg:h-14 border-2 border-[#FF9143] text-white font-semibold transition duration-300 delay-150 opacity-70 hover:scale-105 hover:opacity-100"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >

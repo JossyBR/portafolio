@@ -63,6 +63,7 @@ import {
   react,
   node,
   redux,
+  php,
   figma,
   vector,
 } from "../../assets";
@@ -71,7 +72,7 @@ import {
 
 const Inicio = () => {
   const tamano =
-    "w-20 h-20 absolute transition duration-300 md:w-40 md:h-40 lg:w-44 lg:h-44";
+    "w-16 h-16 absolute transition duration-300 md:w-28 md:h-28 lg:w-44 lg:h-44";
   // Estado para almacenar el número de la imagen actual
   const [currentImage, setCurrentImage] = useState(1);
 
@@ -81,7 +82,7 @@ const Inicio = () => {
     // Función que se ejecuta en cada iteración del intervalo
     const loopAnimation = () => {
       // Incrementa el número de la imagen actual en un bucle entre 1 y 4
-      setCurrentImage((prev) => (prev % 7) + 1); // Hace un bucle entre 1 y 4
+      setCurrentImage((prev) => (prev % 8) + 1); // Hace un bucle entre 1 y 4
     };
 
     // Configura un intervalo para ejecutar la animación
@@ -94,23 +95,26 @@ const Inicio = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col lg:flex lg:flex-row items-center justify-center lg:justify-around gap-8 w-80 mx-5 sm:w-[550px] sm:mx-10 lg:w-[1180px] lg:mx-[350px]">
-      <div>
-        <div className="absolute w-60 rigth-24 bottom-80 lg:rigth-96 lg:bottom-48 lg:w-[700px]">
+    <div className="min-h-screen mx-5 gap-8 w-auto flex flex-col items-center justify-center sm:flex sm:flex-row sm:justify-around lg:w-[1180px] lg:mx-[350px]">
+      <div className="w-auto">
+        <div className="absolute w-60 right-24 bottom-80 sm:right-56 sm:bottom-72 sm:w-72 md:right-80 lg:left-96 lg:bottom-48 lg:w-[700px] border">
           <img src={vector} alt="Imagen" className="bottom-7 " />
         </div>
-        <div className="relative">
-          <h1 className="text-lg sm:text-2xl lg:text-4xl  animate__animated animate__slideInLeft">
+        <div className="border relative text-center sm:text-left">
+          <h1 className="text-xl leading-loose animate__animated animate__slideInLeft sm:text-2xl lg:text-4xl ">
             Hola <br />{" "}
-            <span className="text-2xl sm:text-4xl lg:text-7xl  lg:leading-loose font-bold">
-              Soy <span className="text-[#FF9143] ">Jossy Benitez</span>
+            <span className="text-3xl leading-loose font-bold sm:text-4xl lg:text-7xl">
+              Soy{" "}
+              <span className="text-[#FF9143] leading-loose">
+                Jossy Benitez
+              </span>
             </span>
             <br /> y soy FullStack Web Developer{" "}
           </h1>
         </div>
       </div>
       <div
-        className={`${styles.targetParentElement} relative w-20 h-20 md:w-40 md:h-40 lg:w-44 lg:h-44`}
+        className={`${styles.targetParentElement}relative w-16 h-16 md:w-28 md:h-28 lg:w-44 lg:h-44`}
       >
         <img
           src={css}
@@ -156,13 +160,20 @@ const Inicio = () => {
           alt="Imagen 6"
         />
         <img
-          src={figma}
-          className={`${
-            styles.yourAnimation
-          } w-20 h-20 md:w-40 md:h-40  lg:w-44 lg:h-44 top-0 ${
+          src={php}
+          className={`${styles.yourAnimation} ${tamano} ${
             currentImage === 7 ? "" : styles.hideImage
           }`}
           alt="Imagen 7"
+        />
+        <img
+          src={figma}
+          className={`${
+            styles.yourAnimation
+          } w-16 h-16 md:w-28 md:h-28 lg:w-44 lg:h-44 top-0 ${
+            currentImage === 8 ? "" : styles.hideImage
+          }`}
+          alt="Imagen 8"
         />
       </div>
     </div>
