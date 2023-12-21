@@ -8,12 +8,12 @@ const Nav = () => {
     "border-b-2 border-transparent hover:border-[#FF9143] text-xs sm:text-sm md:text-base lg:text-lg";
 
   return (
-    <div className="fixed top-0 flex flex-row justify-between items-center w-[300px] mx-2 gap-5 sm:w-[550px] sm:mx-10 md:mx-28 lg:w-[1180px] lg:mx-[350px] mt-5 z-20 h-16 p-2 ">
-      <div className="lg:w-[100px] lg:h-16 flex justify-center relative">
-        <h5 className={`text-2xl text-center lg:text-4xl z-10 my-auto`}>JB</h5>
-        <div className="w-10 h-10 z-0 absolute top-0 left-0 bottom-0 lg:w-[100px]">
-          <img src={vector} alt="" />
-        </div>
+    <div className="mt-5 z-20 h-16 p-2 gap-2 fixed top-0 flex flex-row justify-between items-center sm:gap-20 lg:w-[1000px] lg:p-4">
+      <div className="w-10 h-10 z-0 absolute left-0 bottom-0 sm:w-12 sm:h-12 lg:w-24 lg:h-16">
+        <img src={vector} alt="" />
+      </div>
+      <div className="flex justify-center relative">
+        <h5 className={`text-xl text-center lg:ml-3 lg:text-4xl z-10`}>JB</h5>
       </div>
       <div className="flex flex-row gap-2 lg:gap-10 sm:gap-5">
         <a href="#inicio" className={border}>

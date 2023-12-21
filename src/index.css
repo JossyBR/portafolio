@@ -4,10 +4,11 @@
 
 :root {
   background-color: #262a2c;
-  /* border: 1px solid red; */
+  /* border: 2px solid red; */
   color: #ffffff;
   /* display: flex;
-  justify-content: center; */
+  justify-content: center;
+  align-content: center; */
 }
 
 p {

@@ -33,7 +33,7 @@ const Proyectos = () => {
   };
 
   return (
-    <div className="min-h-screen relative">
+    <div className="relative">
       <div className="h-16 "></div>
       <div className="absolute left-0 top-0 w-[550px] z-0">
         <img src={vector} alt="" />
@@ -41,17 +41,17 @@ const Proyectos = () => {
       <h2 className="text-3xl ml-2 font-bold md:mt-5 lg:mt-[25px] lg:text-5xl">
         Proyectos
       </h2>
-      <div className="mt-10 flex flex-wrap justify-center items-center p-2 gap-6 lg:h-[700px] lg:gap-4">
+      <div className="mt-10 w-screen flex flex-row flex-wrap justify-center items-center p-2 gap-6  lg:gap-4">
         {allProyectos.map((proyecto, index) => (
           <Card
             key={index}
-            className="w-80 h-[450px] shadow-none lg:w-[450px] lg:h-[600px] bg-transparent transition duration-300 delay-150 hover:scale-95 hover:shadow-xl z-10"
+            className="w-72 h-[450px] shadow-none lg:w-[450px] lg:h-[600px] bg-transparent transition duration-300 delay-150 hover:scale-95 hover:shadow-xl z-10"
           >
-            <CardHeader className="w-80 h-60 lg:w-[450px] lg:h-[350px] ml-0 mt-0 bg-transparent">
+            <CardHeader className="w-72 h-60 lg:w-[450px] lg:h-[350px] ml-0 mt-0 bg-transparent">
               <img
                 src={proyecto.image}
                 alt="card-image"
-                className="w-80 h-60 lg:w-[450px] lg:h-[350px] opacity-75 hover:opacity-100"
+                className="w-72 h-60 lg:w-[450px] lg:h-[350px] opacity-75 hover:opacity-100"
               />
             </CardHeader>
 
@@ -63,7 +63,7 @@ const Proyectos = () => {
                 >
                   {proyecto.titulo}
                 </h4>
-                <p className="text-sm text-justify">{proyecto.descripcion}</p>
+                <p className="text-xs text-justify">{proyecto.descripcion}</p>
               </CardBody>
               <div className="w-32 flex flex-col justify-center items-center gap-10 lg:w-[200px]">
                 {/* <div className="flex flex-row">
@@ -98,10 +98,10 @@ const Proyectos = () => {
             </div>
           </Card>
         ))}
-        <div className="absolute bottom-[850px] w-[450px] z-0">
+        <div className="absolute z-0 lg:bottom-[850px] lg:w-[450px] ">
           <img src={vector} alt="" />
         </div>
-        <div className="absolute bottom-[450px] w-[450px] z-0">
+        <div className="absolute z-0 lg:bottom-[450px] lg:w-[450px] ">
           <img src={vector} alt="" />
         </div>
       </div>

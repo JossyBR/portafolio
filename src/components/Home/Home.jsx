@@ -9,7 +9,10 @@ import Footer from "../Footer/Footer";
 const Home = () => {
   return (
     <div>
-      <Nav />
+      <div className="h-20 w-[100%] flex justify-center items-center z-50">
+        <Nav />
+      </div>
+      {/* <Nav /> */}
       <div id="inicio">
         <Inicio />
       </div>

@@ -71,8 +71,7 @@ import {
 // w-[1180px] mx-[130px]
 
 const Inicio = () => {
-  const tamano =
-    "w-16 h-16 absolute transition duration-300 md:w-28 md:h-28 lg:w-44 lg:h-44";
+  const tamano = "w-16 h-16 absolute transition duration-300 md:w-24 md:h-24";
   // Estado para almacenar el número de la imagen actual
   const [currentImage, setCurrentImage] = useState(1);
 
@@ -95,15 +94,15 @@ const Inicio = () => {
   }, []);
 
   return (
-    <div className="min-h-screen mx-5 gap-8 w-auto flex flex-col items-center justify-center sm:flex sm:flex-row sm:justify-around lg:w-[1180px] lg:mx-[350px]">
+    <div className="min-h-screen w-screen gap-8 flex flex-col items-center justify-center sm:flex sm:flex-row sm:justify-around">
       <div className="w-auto">
-        <div className="absolute w-60 right-24 bottom-80 sm:right-56 sm:bottom-72 sm:w-72 md:right-80 lg:left-96 lg:bottom-48 lg:w-[700px] border">
-          <img src={vector} alt="Imagen" className="bottom-7 " />
+        <div className="absolute w-60 right-16 sm:right-56 sm:bottom-48 sm:w-72 md:right-80 md:bottom-40 lg:left-20 lg:bottom-0 lg:w-[700px]">
+          <img src={vector} alt="Imagen" />
         </div>
-        <div className="border relative text-center sm:text-left">
-          <h1 className="text-xl leading-loose animate__animated animate__slideInLeft sm:text-2xl lg:text-4xl ">
+        <div className="relative text-center sm:text-left">
+          <h1 className="text-xl leading-loose animate__animated animate__slideInLeft sm:text-2xl lg:text-3xl ">
             Hola <br />{" "}
-            <span className="text-3xl leading-loose font-bold sm:text-4xl lg:text-7xl">
+            <span className="text-3xl leading-loose font-bold sm:text-4xl lg:text-5xl">
               Soy{" "}
               <span className="text-[#FF9143] leading-loose">
                 Jossy Benitez
@@ -114,7 +113,7 @@ const Inicio = () => {
         </div>
       </div>
       <div
-        className={`${styles.targetParentElement}relative w-16 h-16 md:w-28 md:h-28 lg:w-44 lg:h-44`}
+        className={`${styles.targetParentElement}relative w-16 h-16 md:w-24 md:h-24`}
       >
         <img
           src={css}
@@ -168,9 +167,7 @@ const Inicio = () => {
         />
         <img
           src={figma}
-          className={`${
-            styles.yourAnimation
-          } w-16 h-16 md:w-28 md:h-28 lg:w-44 lg:h-44 top-0 ${
+          className={`${styles.yourAnimation} w-16 h-16 md:w-24 md:h-24 top-0 ${
             currentImage === 8 ? "" : styles.hideImage
           }`}
           alt="Imagen 8"

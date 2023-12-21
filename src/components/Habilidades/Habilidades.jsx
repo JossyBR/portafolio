@@ -10,39 +10,39 @@ const Habilidades = () => {
   // const repeatOtrasHabilidades = [...otrasHabilidades, ...otrasHabilidades];
 
   return (
-    <div className="min-h-screen lg:w-[1180px] lg:mx-[350px]">
+    <div className="min-h-screen lg:w-[1000px] lg:mx-auto">
       <div className="h-16"></div>
       <h2 className="text-3xl ml-2 font-bold md:mt-10 lg:mt-14 lg:text-5xl">
         Habilidades
       </h2>
       <div
-        className={`gap-5 mt-10 flex flex-col justify-center md:mt-20 lg:gap-32 lg:mt-20`}
+        className={`mt-10 gap-5 flex flex-col justify-center md:mt-20 lg:gap-32 lg:mt-20`}
       >
         <div className={`flex flex-row flex-wrap justify-around`}>
           {allHabilidades.map((habilidad, index) => (
             <div
               key={index}
-              className={`w-1/2 flex flex-col items-center font-bold mb-8 rounded-3xl transition duration-300 delay-150 hover:shadow-xl hover:scale-100 md:hover:scale-110 md:w-auto lg:w-auto md:hover:shadow-2xl `}
+              className={`w-1/2 border  flex flex-col items-center font-bold rounded-3xl transition duration-300 delay-150 hover:shadow-xl hover:scale-100 md:hover:scale-110 md:w-auto lg:w-auto md:hover:shadow-2xl`}
             >
               <img
                 src={habilidad.imagen}
                 alt=""
-                className="w-16 h-16 md:w-32 md:h-32 lg:w-44 lg:h-44"
+                className="w-16 h-16 md:w-28 md:h-28 "
               />
               <h4 className="text-base lg:text-2xl">{habilidad.texto}</h4>
             </div>
           ))}
         </div>
-        <div className="flex flex-row flex-wrap justify-around md:mt-6">
+        <div className="flex flex-row flex-wrap justify-around">
           {otrasHabilidades.map((habilidad, index) => (
             <div
               key={index}
-              className=" w-1/2  flex flex-col items-center font-bold mb-8 rounded-3xl transition duration-300 delay-150 hover:scale-100 hover:shadow-xl md:hover:scale-110 md:hover:shadow-2xl md:w-auto lg:w-auto"
+              className=" w-1/2 flex flex-col items-center font-bold rounded-3xl transition duration-300 delay-150 hover:scale-100 hover:shadow-xl md:hover:scale-110 md:hover:shadow-2xl md:w-auto md:mt-8 lg:w-auto"
             >
               <img
                 src={habilidad.imagen}
                 alt=""
-                className="w-16 h-16 md:w-32 md:h-32 lg:w-44 lg:h-44"
+                className="w-16 h-16 md:w-28 md:h-28"
               />
               <h4 className="text-base lg:text-2xl">{habilidad.texto}</h4>
             </div>
