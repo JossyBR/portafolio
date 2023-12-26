@@ -1,5 +1,4 @@
 import React from "react";
-import Prueba from "../../assets/Foto2.jpg";
 import { css, html, react, node, redux, figma } from "../../assets";
 import styles from "./habilidades.module.css";
 // import { allHabilidades, otrasHabilidades } from "./allHabilidades";
@@ -12,16 +11,12 @@ const Habilidades = () => {
 
   return (
     <div className="min-h-screen lg:w-[1000px] lg:mx-auto">
-      <div className="h-16"></div>
+      <div className="h-5 md:h-16"></div>
       <h2 className="text-3xl ml-2 font-bold md:mt-10 lg:mt-14 lg:text-5xl">
         Habilidades
       </h2>
-      <div
-        className={`mt-10 gap-5 flex flex-col items-center`}
-      >
-        <div
-          className={`w-full flex flex-row flex-wrap justify-center `}
-        >
+      <div className={`mt-10 gap-5 flex flex-col items-center`}>
+        <div className={`w-full flex flex-row flex-wrap justify-center `}>
           {allHabilidades.map((habilidad, index) => (
             <div
               key={index}

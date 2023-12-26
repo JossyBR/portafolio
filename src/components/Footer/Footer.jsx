@@ -52,7 +52,7 @@ const Footer = () => {
                   href="https://www.instagram.com/jossybnitez/"
                   target="_blank"
                 >
-                  <i class="fa-brands fa-instagram text-2xl hover:scale-110 hover:shadow-2xl"></i>
+                  <i className="fa-brands fa-instagram text-2xl hover:scale-110 hover:shadow-2xl"></i>
                 </a>
               </div>
             </div>

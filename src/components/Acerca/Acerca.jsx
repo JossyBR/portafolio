@@ -18,34 +18,41 @@ const Acerca = () => {
   };
 
   return (
-    <div
-      id="#acerca"
-      className="flex justify-center items-center min-h-screen relative"
-    >
+    <div className="flex justify-center items-center min-h-screen relative">
       <div className="absolute left-0 top-0 w-[700px] h-[700px] z-0">
         <img src={vector} alt="" />
       </div>
-      <div className="w-80 h-[600px] flex flex-col items-center justify-center bg-[#1C1E22] text-white gap-8 rounded-lg z-10 sm:w-[550px] lg:gap-4 lg:flex-row lg:w-[800px] lg:h-[500px] 2xl:w-[967px] 2xl:h-[700px]">
-        <div className=" w-52 h-52 mt-8 rounded-lg sm:w-64 sm:h-64  lg:w-72 lg:h-72 2xl:ml-6 2xl:w-[326px] 2xl:h-[410px] ">
+      <div className="w-80 h-auto p-2 flex flex-col items-center  bg-[#1C1E22] text-white gap-8 rounded-lg z-10 sm:w-[550px] lg:gap-4 lg:flex-row lg:w-[800px] lg:h-[500px] 2xl:w-[967px] 2xl:h-[700px]">
+        <div className=" w-52 h-52 rounded-lg sm:w-64 sm:h-64  lg:w-72 lg:h-72 2xl:ml-6 2xl:w-[326px] 2xl:h-[410px] ">
           <img
             src={prueba}
             alt="Acerca de"
             className="w-52 h-52 rounded-lg sm:w-64 sm:h-64 lg:w-72 lg:h-72 2xl:w-[326px] 2xl:h-[405px]"
           />
         </div>
-        <div className=" w-auto h-72 mx-1 flex flex-col justify-center sm:h-auto lg:w-[450px] 2xl:w-[560px] 2xl:h-auto 2xl:mr-6">
-          <h3 className="text-2xl text-center mb-5 mx-1 lg:text-5xl 2xl:mb-[32px]">
+        <div className="w-auto h-auto mx-1 flex flex-col justify-center sm:h-auto lg:w-[450px] 2xl:w-[560px] 2xl:h-auto 2xl:mr-6">
+          <h3 className="text-2xl text-center mb-2 mx-1 lg:text-5xl 2xl:mb-[32px]">
             Acerca de Mi
           </h3>
-          <p className="text-xs text-justify mx-1 sm:text-sm lg:text-base lg:leading-8  2xl:leading-10 ">
-            Hola! mi nombre es Jossy Benitez y soy Full Stack Developer con
-            sólida formación en tecnologías como HTML, CSS, JavaScript, React,
-            Redux, Express y Node.js. Mi interés principal radica en aprender y
-            aplicar mis conocimientos para contribuir al desarrollo de
-            soluciones web efectivas y seguras. Combino mis habilidades técnicas
-            con una sólida formación en administración seguridad y salud en el
-            trabajo, con experiencia en diseño e implementación del sistema de
-            gestión de seguridad y salud en el trabajo SG-SST.
+          <p className="text-xs text-justify mx-1 sm:text-sm lg:text-base ">
+            ¡Hola! Soy Jossy Benitez, FullStack Web Developer con habilidades en
+            HTML, CSS, JavaScript, PHP, React, Redux, Express, Node.js, Figma y
+            Blender, disfruto del diseño y la animación 3D, fusionando estas
+            habilidades con una formación en administración en seguridad y salud
+            en el trabajo. <br />
+            <br /> Enfoco mis habilidades en el desarrollo de soluciones web
+            dinámicas. Como profesional, busco innovar al combinar programación
+            y animación 3D, generando impacto y conciencia no solo en el ámbito
+            laboral, sino también en diversos contextos, a través de soluciones
+            visuales e innovadoras. <br />
+            <br /> Me entusiasma la idea de crear piezas gráficas dinámicas para
+            comunicar conceptos de manera clara y visual, mejorando
+            significativamente la retención de información en diversos
+            contextos. <br />
+            <br /> Todo lo anterior con el propósito de aportar mediante la
+            programación y la animación 3D, generando impacto en cualquier
+            entorno donde pueda presentar alternativas de manera innovadora y
+            efectiva.
           </p>
 
           <div className="w-auto mt-5 flex flex-row justify-center items-center 2xl:mt-10">

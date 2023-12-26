@@ -7,7 +7,6 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import Prueba from "../../assets/Foto2.jpg";
 import allProyectos from "./allProyectos";
 import { vector } from "../../assets";
 

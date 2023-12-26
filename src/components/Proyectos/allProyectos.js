@@ -1,5 +1,4 @@
 // Crear archivo de proyectos.js
-import Prueba from "../../assets/Foto2.jpg";
 import { BiLogoReact } from "react-icons/bi";
 import { DiCss3 } from "react-icons/di";
 import {
