@@ -23,18 +23,18 @@ const Acerca = () => {
         <img src={vector} alt="" />
       </div>
       <div className="w-80 h-auto p-2 flex flex-col items-center  bg-[#1C1E22] text-white gap-8 rounded-lg z-10 sm:w-[550px] lg:gap-4 lg:flex-row lg:w-[800px] lg:h-[500px] 2xl:w-[967px] 2xl:h-[700px]">
-        <div className=" w-52 h-52 rounded-lg sm:w-64 sm:h-64  lg:w-72 lg:h-72 2xl:ml-6 2xl:w-[326px] 2xl:h-[410px] ">
+        <div className=" w-40 h-52 mt-3 rounded-lg sm:w-52 sm:h-64 lg:ml-2 lg:w-64 lg:h-72 2xl:ml-6 2xl:w-[326px] 2xl:h-[410px] ">
           <img
             src={prueba}
             alt="Acerca de"
-            className="w-52 h-52 rounded-lg sm:w-64 sm:h-64 lg:w-72 lg:h-72 2xl:w-[326px] 2xl:h-[405px]"
+            className="w-40 h-52 rounded-lg sm:w-52 sm:h-64 lg:w-64 lg:h-72 2xl:w-[326px] 2xl:h-[405px]"
           />
         </div>
-        <div className="w-auto h-auto mx-1 flex flex-col justify-center sm:h-auto lg:w-[450px] 2xl:w-[560px] 2xl:h-auto 2xl:mr-6">
-          <h3 className="text-2xl text-center mb-2 mx-1 lg:text-5xl 2xl:mb-[32px]">
+        <div className="w-auto h-auto mx-1 flex flex-col justify-center sm:h-auto lg:w-[550px] 2xl:w-[560px] 2xl:h-auto 2xl:mr-6">
+          <h3 className="text-2xl text-center mb-2 mx-1 lg:text-4xl 2xl:mb-[32px]">
             Acerca de Mi
           </h3>
-          <p className="text-xs text-justify mx-1 sm:text-sm lg:text-base ">
+          <p className="text-xs text-justify mx-1 sm:text-sm 2xl:text-base ">
             ¡Hola! Soy Jossy Benitez, FullStack Web Developer con habilidades en
             HTML, CSS, JavaScript, PHP, React, Redux, Express, Node.js, Figma y
             Blender, disfruto del diseño y la animación 3D, fusionando estas
