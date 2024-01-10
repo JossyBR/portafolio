@@ -40,14 +40,14 @@ const Acerca = () => {
             Blender, disfruto del diseño y la animación 3D, fusionando estas
             habilidades con una formación en administración en seguridad y salud
             en el trabajo. <br />
-            <br /> Enfoco mis habilidades en el desarrollo de soluciones web
-            dinámicas. Como profesional, busco innovar al combinar programación
-            y animación 3D, generando impacto y conciencia no solo en el ámbito
-            laboral, sino también en diversos contextos, a través de soluciones
-            visuales e innovadoras. <br />
-            <br /> Me entusiasma la idea de crear piezas gráficas dinámicas para
-            comunicar conceptos de manera clara y visual, mejorando
-            significativamente la retención de información en diversos
+            <br /> He trabajado en diversos proyectos, desde el desarrollo de
+            sitios informativos, aplicaciones con conexión a APIs, Sistemas de
+            Gestión académicos, hasta la creación de marketplaces y eCommerce.
+            Busco crear experiencias visuales combinando programación y
+            animación. <br />
+            <br /> Me agrada la idea de diseñar piezas gráficas dinámicas que
+            transmitan conceptos de manera clara, contribuyendo
+            significativamente a mejorar la retención de información en diversos
             contextos. <br />
             <br /> Todo lo anterior con el propósito de aportar mediante la
             programación y la animación 3D, generando impacto en cualquier

@@ -12,7 +12,7 @@ const Habilidades = () => {
   return (
     <div className="min-h-screen lg:w-[1000px] lg:mx-auto">
       <div className="h-5 md:h-16"></div>
-      <h2 className="text-3xl ml-2 font-bold md:mt-10 lg:mt-14 lg:text-5xl">
+      <h2 className="text-3xl ml-2 mt-12 font-bold lg:mt-14 lg:text-5xl">
         Habilidades
       </h2>
       <div className={`mt-10 gap-5 flex flex-col items-center`}>
