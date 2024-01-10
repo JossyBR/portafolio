@@ -19,10 +19,10 @@ const Acerca = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen relative">
-      <div className="absolute left-0 top-0 w-[700px] h-[700px] z-0">
+      <div className="absolute left-0 top-0 lg:w-[700px] lg:h-[700px] z-0">
         <img src={vector} alt="" />
       </div>
-      <div className="w-80 h-auto p-2 flex flex-col items-center  bg-[#1C1E22] text-white gap-8 rounded-lg z-10 sm:w-[550px] lg:gap-4 lg:flex-row lg:w-[800px] lg:h-[500px] 2xl:w-[967px] 2xl:h-[700px]">
+      <div className="w-80 h-auto p-2 flex flex-col items-center bg-[#1C1E22] text-white gap-8 rounded-lg z-10 sm:w-[550px] lg:gap-4 lg:flex-row lg:w-[800px] lg:h-[500px] 2xl:w-[967px] 2xl:h-[700px]">
         <div className=" w-40 h-52 mt-3 rounded-lg sm:w-52 sm:h-64 lg:ml-2 lg:w-64 lg:h-72 2xl:ml-6 2xl:w-[326px] 2xl:h-[410px] ">
           <img
             src={prueba}

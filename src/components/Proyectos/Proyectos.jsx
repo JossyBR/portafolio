@@ -34,13 +34,13 @@ const Proyectos = () => {
   return (
     <div className="relative">
       <div className="h-16 "></div>
-      <div className="absolute left-0 top-0 w-[550px] z-0">
+      <div className="absolute left-0 top-0 lg:w-[550px] z-0">
         <img src={vector} alt="" />
       </div>
       <h2 className="text-3xl ml-2 font-bold md:mt-5 lg:mt-[25px] lg:text-5xl">
         Proyectos
       </h2>
-      <div className="mt-10 w-screen flex flex-row flex-wrap justify-center items-center p-2 gap-6  lg:gap-4">
+      <div className="mt-10 flex flex-row flex-wrap justify-center items-center p-2 gap-6  lg:gap-4">
         {allProyectos.map((proyecto, index) => (
           <Card
             key={index}

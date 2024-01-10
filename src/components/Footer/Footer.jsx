@@ -8,7 +8,7 @@ const Footer = () => {
   const border = "border-b-2 border-transparent text-sm hover:border-[#FF9143]";
 
   return (
-    <div className="bg-black min-h-screen ">
+    <div className="bg-black min-h-screen">
       <div className="h-16"></div>
       <h2 className="text-3xl mt-[25px] font-bold lg:text-5xl lg:mb-7 ml-2">
         Contacto
