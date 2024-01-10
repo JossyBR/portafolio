@@ -16,6 +16,9 @@ import javascript from "./habilidades/javascript.svg";
 import vector from "./vector.svg";
 import php from "./habilidades/php.svg";
 
+//menu
+import ep_menu from "./ep_menu.svg";
+
 export {
   huellitas,
   food,
@@ -31,4 +34,5 @@ export {
   javascript,
   vector,
   php,
+  ep_menu,
 };

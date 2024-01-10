@@ -181,7 +181,6 @@
 
 import React, { useState, useEffect } from "react";
 import { Button, Image } from "@material-tailwind/react";
-import Prueba from "../../assets/habilidades/figma.svg";
 import styles from "./inicio.module.css";
 import {
   css,
